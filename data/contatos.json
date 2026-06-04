@@ -3,43 +3,43 @@
   "items": [ 
     { 
       "id": 1,
-      "nome": "Marlon França",
-      "cargo": "Analista de Suporte",
-      "departamento": "TI",
-      "email": "marlon.franca@multipedidos.com.br",
-      "telefone": "",
-      "slack": "@marlon",
+      "nome": "Ivan Theis",
+      "cargo": "Supervisor",
+      "departamento": "Suporte",
+      "email": "ivan.theis@multipedidos.com.br",
+      "telefone": "+55 51 9873-3116",
+      "slack": "Discord: ivantheis",
       "observacao": ""
     },
     {
       "id": 2,
-      "nome": "Suporte N2",
-      "cargo": "Escalada Técnica",
-      "departamento": "TI",
-      "email": "suporte.n2@exemplo.com",
-      "telefone": "",
-      "slack": "#suporte-n2",
-      "observacao": "Acionar apenas após esgotadas as tentativas de N1"
+      "nome": "Jonatas Souza",
+      "cargo": "Supervisor",
+      "departamento": "Suporte",
+      "email": "jonatas@multipedidos.com.br",
+      "telefone": "+55 21 98408-7200",
+      "slack": "Discord: jonatasMP",
+      "observacao": ""
     },
     {
       "id": 3,
-      "nome": "Fornecedor ERP",
-      "cargo": "Suporte Externo",
-      "departamento": "Externo",
-      "email": "suporte@fornecedor.com",
-      "telefone": "(11) 9 9999-9999",
+      "nome": "Elgin",
+      "cargo": "Suporte",
+      "departamento": "Suporte",
+      "email": "",
+      "telefone": "+5511998519559",
       "slack": "",
-      "observacao": "Atendimento comercial: seg–sex, 8h–18h"
+      "observacao": "Chamar no WhatsApp"
     },
     {
       "id": 4,
-      "nome": "RH",
-      "cargo": "Recursos Humanos",
-      "departamento": "RH",
-      "email": "rh@exemplo.com",
-      "telefone": "",
-      "slack": "#rh",
-      "observacao": "Contato para onboarding e offboarding de colaboradores"
+      "nome": "Comercial Multipedidos",
+      "cargo": "Comercial",
+      "departamento": "Comercial",
+      "email": "comercial@multipedidos.com.br",
+      "telefone": "+55 47 99192-5352",
+      "slack": "Discord: Comercial",
+      "observacao": "Contato para interessados e novos clientes"
     }
   ]
 }

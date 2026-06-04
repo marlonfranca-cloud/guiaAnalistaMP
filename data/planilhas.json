@@ -3,39 +3,39 @@
   "items": [
     {  
       "id": 1,
-      "nome": "Controle de Chamados",
-      "descricao": "Planilha para acompanhamento manual de chamados abertos, pendentes e encerrados no mês.",
-      "link": "",
-      "formato": "Excel",
-      "atualizado": "Jan 2025",
-      "responsavel": "Marlon"
+      "nome": "Dashboard Suporte",
+      "descricao": "Acompanhamento de chamados do mês",
+      "link": "https://docs.google.com/spreadsheets/d/13kj2i8-MzVOV9nvhcuNLrraRxaRGNadxUP6fZkhb4aY/edit",
+      "formato": "Google Sheets",
+      "atualizado": "diariamente",
+      "responsavel": "Ivan e Jonatas"
     },
     {
       "id": 2,
-      "nome": "Inventário de Equipamentos",
-      "descricao": "Lista completa de hardware da empresa com número de série, local e responsável.",
-      "link": "",
-      "formato": "Excel",
-      "atualizado": "Dez 2024",
-      "responsavel": "TI"
+      "nome": "Controle novo MRR",
+      "descricao": "Acompanhamento financeiro de novos contratos",
+      "link": "https://docs.google.com/spreadsheets/d/1g8J6_FUU7Lk1MpuL0xAxiIiLsmp7gTFUclNl5rT3Z6k/edit?gid=1239548597#gid=1239548597",
+      "formato": "Google Sheets",
+      "atualizado": "diariamente",
+      "responsavel": "MP"
     },
     {
       "id": 3,
-      "nome": "Template de Relatório Mensal",
-      "descricao": "Modelo padronizado para o relatório mensal de suporte com métricas e gráficos.",
-      "link": "",
-      "formato": "Excel",
-      "atualizado": "Mar 2025",
-      "responsavel": "Marlon"
+      "nome": "Tabela fiscal completa",
+      "descricao": "Modelo para coleta de NCM, CFOP, CST e CSOSN",
+      "link": "https://docs.google.com/spreadsheets/d/19lk6LBN1Tz1CXldiknb5P7D5OL9kQHaPCKU-CHKUDn4/edit?gid=0#gid=0",
+      "formato": "Google Sheets",
+      "atualizado": "periodicamente",
+      "responsavel": "MP"
     },
     {
       "id": 4,
-      "nome": "Controle de Licenças",
-      "descricao": "Planilha com todos os softwares licenciados, vencimento e quantidade de seats.",
-      "link": "",
-      "formato": "Excel",
-      "atualizado": "Fev 2025",
-      "responsavel": "TI"
+      "nome": "Escala Feriados",
+      "descricao": "Escalas ajustadas para os feriados nacionais",
+      "link": "https://docs.google.com/spreadsheets/d/1sdxsM_oX-wZVsqR0Mpaqoo-gW_XSnFR2XhEfcX-c1Wo/edit?gid=1956383678#gid=1956383678",
+      "formato": "Google Sheets",
+      "atualizado": "periodicamente",
+      "responsavel": "Jonatas"
     }
   ]
 }

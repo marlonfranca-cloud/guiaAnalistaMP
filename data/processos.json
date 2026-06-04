@@ -4,14 +4,145 @@
     {
       "id": 1,
       "nome": "Reset de Senha",
-      "descricao": "Procedimento padrão para redefinição de senhas de usuários.",
+      "descricao": "Senha temporária: 12345",
       "categoria": "",
       "passos": [
-        "Confirmar a loja do usuário e a necessidade do reset de senha",
-        "Acessar a loja do cliente no CRM",
-        "Conferir se o número chamando no chat é o mesmo que o Responsável cadastrado no CRM",
-        "Informar a nova senha temporária ao usuário",
-        "Orientar a troca imediata no primeiro login"
+        "Confirme a loja do usuário e a necessidade do reset de senha",
+        "Acesse a loja do cliente no CRM",
+        "Confira: o número chamando no chat é o mesmo do Responsável cadastrado no CRM?",
+        "Se SIM, pule para o passo 8",
+        "Se NÃO, chame o número do responsável do CRM para confirmar o reset",
+        "Aguarde a resposta do responsável por 30 minutos",
+        "Sem resposta em meia hora, informe ao usuário que o reset não pode ser realizado por falta de confirmação",
+        "Havendo a confirmação, acesse o CRM e no menu lateral, clique em 'Resetar senha'",
+        "No email do usuário que está solicitando o reset: clique em 'Restar'",
+        "Informe a nova senha temporária ao usuário (12345)",
+        "Oriente o usuário a trocar a senha no primeiro acesso",
+        "Confirme que o cliente logou e finalize o chat."
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Desbloqueio temporário",
+      "descricao": "Desbloqueio temporário = 24h (até o dia seguinte)",
+      "categoria": "",
+      "passos": [
+        "Confirme a loja do cliente e a necessidade do desbloqueio",
+        "No CRM, pesquise a loja e clique em 'Histórico do restaurante'",
+        "Quantos desbloqueios a loja já teve para a fatura atual?",
+        "0 desbloqueios: oriente o cliente a fazer o desbloqueio temporário acessando Financeiro > Faturas > Desbloqueio Temporário",
+        "1 desbloqueio: segure o cliente por até 30 minutos, depois, faça o desbloqueio descrito como '2º desbloqueio temporário'",
+        "2 desbloqueios: segure o cliente até o horário da abertura da loja, depois, faça o 3º desbloqueio descrito como '3º desbloqueio temporário'",
+        "3 desbloqueios ou mais: informe ao cliente que somente o Financeiro pode realizar um novo desbloqueio e que você vai pedir essa liberação",
+        "copie os dados do cliente (nome da loja, contato do chat, plano contratado) e descreva a situação do cliente. Ex:cliente pede o 3º desbloqueio, diz que as vendas estão baixas",
+        "envie os dados e a descrição no grupo 'SUPORTE | Financeiro/Comercial' do WhatsApp",
+        "aguarde a resposta do Financeiro, que pode ser: 'Liberado' ou 'Negado'",
+        "caso o financeiro aprove, faça o desbloqueio temporário e informe ao cliente",
+        "caso o financeiro negue, informe ao cliente que o desbloqueio não pode ser realizado, depois, informe as opções de negociação repassadas pelo financeiro."
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Acessar o Gestor sem login",
+      "descricao": "Use quando houver problema no login ou você quiser visualizar o Gestor como o cliente",
+      "categoria": "",
+      "passos": [
+        "encontre e clique no nome da loja no CRM",
+        "na barra lateral, encontre e clique sobre 'Copiar Link de Acesso'",
+        "abra o Gestor Desktop",
+        "use as teclas 'Ctrl' + 'Shift' + 'C' para abrir o devtools do Gestor",
+        "acesse a aba 'Console' do devtools e digite: window.location.href='LINK COPIADO'",
+        "pressione 'Enter' e aguarde o Gestor recarregar com a visão do cliente."
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Contato Elgin",
+      "descricao": "",
+      "categoria": "",
+      "passos": [
+        ""
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Contato Elgin",
+      "descricao": "",
+      "categoria": "",
+      "passos": [
+        ""
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Contato Elgin",
+      "descricao": "",
+      "categoria": "",
+      "passos": [
+        ""
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Contato Elgin",
+      "descricao": "",
+      "categoria": "",
+      "passos": [
+        ""
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Contato Elgin",
+      "descricao": "",
+      "categoria": "",
+      "passos": [
+        ""
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Contato Elgin",
+      "descricao": "",
+      "categoria": "",
+      "passos": [
+        ""
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Contato Elgin",
+      "descricao": "",
+      "categoria": "",
+      "passos": [
+        ""
+      ]
+    },
+    {
+      "id": 1,
+      "nome": "Contato Elgin",
+      "descricao": "",
+      "categoria": "",
+      "passos": [
+        ""
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Contato Elgin",
+      "descricao": "",
+      "categoria": "",
+      "passos": [
+        ""
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Contato Elgin",
+      "descricao": "",
+      "categoria": "",
+      "passos": [
+        ""
       ]
     }
   ]
