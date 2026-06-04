@@ -1,22 +1,22 @@
 {
-  "descricao": "Scripts e automações disponíveis para uso do time de suporte.",
+  "descricao": "REQ = Requisitos para liberação do uso",
   "items": [
     { 
       "id": 1,
-      "nome": "Limpeza de Cache",
-      "descricao": "Remove arquivos temporários e cache do sistema para liberar espaço em disco.",
-      "linguagem": "PowerShell",
-      "uso": "Manutenção",
-      "autor": "Marlon",
+      "nome": "PDV Simplificado",
+      "descricao": "REQ: Plano iniciante + Wabot",
+      "linguagem": "PDV",
+      "uso": "Somente Iniciante",
+      "autor": "",
       "link": ""
     }, 
     {
       "id": 2,
-      "nome": "Relatório de Usuários Ativos",
-      "descricao": "Gera CSV com lista de todos os usuários ativos no AD, com data de último login.",
-      "linguagem": "PowerShell",
-      "uso": "Relatório",
-      "autor": "Marlon",
+      "nome": "Wabot por R$9,90",
+      "descricao": "REQ: Qualquer plano + Pix Automático",
+      "linguagem": ["Wabot", "Pix"],
+      "uso": "Qualquer plano",
+      "autor": "",
       "link": ""
     },
     {
