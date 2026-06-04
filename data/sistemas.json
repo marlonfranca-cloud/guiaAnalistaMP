@@ -11,8 +11,8 @@
       "responsavel": "TI",
       "ambiente": "Produção",
       "categoria": "Sistemas Internos"
-    },
-    {
+    }, 
+    { 
       "id": 2,
       "nome": "CRM",
       "tipo": "Gestão de Clientes",

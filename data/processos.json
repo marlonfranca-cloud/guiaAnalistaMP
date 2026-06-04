@@ -1,7 +1,7 @@
 {
   "descricao": "Processos e fluxos de trabalho padronizados pelo time.",
   "items": [
-    {
+    { 
       "id": 1,
       "nome": "Abertura de Chamado",
       "descricao": "Passo a passo para registrar um novo chamado de suporte corretamente.",
