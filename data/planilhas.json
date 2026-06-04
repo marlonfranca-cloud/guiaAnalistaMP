@@ -1,0 +1,41 @@
+{
+  "descricao": "Planilhas e templates utilizados pelo time.",
+  "items": [
+    {
+      "id": 1,
+      "nome": "Controle de Chamados",
+      "descricao": "Planilha para acompanhamento manual de chamados abertos, pendentes e encerrados no mês.",
+      "link": "",
+      "formato": "Excel",
+      "atualizado": "Jan 2025",
+      "responsavel": "Marlon"
+    },
+    {
+      "id": 2,
+      "nome": "Inventário de Equipamentos",
+      "descricao": "Lista completa de hardware da empresa com número de série, local e responsável.",
+      "link": "",
+      "formato": "Excel",
+      "atualizado": "Dez 2024",
+      "responsavel": "TI"
+    },
+    {
+      "id": 3,
+      "nome": "Template de Relatório Mensal",
+      "descricao": "Modelo padronizado para o relatório mensal de suporte com métricas e gráficos.",
+      "link": "",
+      "formato": "Excel",
+      "atualizado": "Mar 2025",
+      "responsavel": "Marlon"
+    },
+    {
+      "id": 4,
+      "nome": "Controle de Licenças",
+      "descricao": "Planilha com todos os softwares licenciados, vencimento e quantidade de seats.",
+      "link": "",
+      "formato": "Excel",
+      "atualizado": "Fev 2025",
+      "responsavel": "TI"
+    }
+  ]
+}

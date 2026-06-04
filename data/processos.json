@@ -1,0 +1,59 @@
+{
+  "descricao": "Processos e fluxos de trabalho padronizados pelo time.",
+  "items": [
+    {
+      "id": 1,
+      "nome": "Abertura de Chamado",
+      "descricao": "Passo a passo para registrar um novo chamado de suporte corretamente.",
+      "categoria": "Atendimento",
+      "passos": [
+        "Acessar o sistema de chamados",
+        "Clicar em 'Novo Chamado'",
+        "Preencher título, descrição e urgência",
+        "Selecionar o sistema afetado",
+        "Anexar prints ou logs relevantes",
+        "Confirmar e enviar"
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Escalada para N2",
+      "descricao": "Quando e como escalar um chamado para o segundo nível de suporte.",
+      "categoria": "Atendimento",
+      "passos": [
+        "Verificar se o problema não tem solução conhecida na base de conhecimento",
+        "Registrar no chamado tudo que já foi tentado",
+        "Alterar o nível do chamado para N2",
+        "Notificar o responsável via Slack no canal #suporte-n2",
+        "Aguardar retorno e manter o cliente informado"
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Onboarding de Novo Usuário",
+      "descricao": "Processo de criação e configuração de acesso para novos colaboradores.",
+      "categoria": "Acessos",
+      "passos": [
+        "Receber solicitação do RH via formulário",
+        "Criar usuário no Active Directory",
+        "Provisionar acessos conforme o perfil da vaga",
+        "Configurar e-mail corporativo",
+        "Enviar credenciais por e-mail seguro",
+        "Registrar o processo no chamado e fechar"
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Reset de Senha",
+      "descricao": "Procedimento padrão para redefinição de senhas de usuários.",
+      "categoria": "Acessos",
+      "passos": [
+        "Verificar a identidade do solicitante",
+        "Acessar o painel do Active Directory",
+        "Localizar o usuário e resetar a senha",
+        "Informar a nova senha temporária ao usuário",
+        "Orientar a troca imediata no primeiro login"
+      ]
+    }
+  ]
+}

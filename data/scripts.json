@@ -1,0 +1,41 @@
+{
+  "descricao": "Scripts e automações disponíveis para uso do time de suporte.",
+  "items": [
+    {
+      "id": 1,
+      "nome": "Limpeza de Cache",
+      "descricao": "Remove arquivos temporários e cache do sistema para liberar espaço em disco.",
+      "linguagem": "PowerShell",
+      "uso": "Manutenção",
+      "autor": "Marlon",
+      "link": ""
+    },
+    {
+      "id": 2,
+      "nome": "Relatório de Usuários Ativos",
+      "descricao": "Gera CSV com lista de todos os usuários ativos no AD, com data de último login.",
+      "linguagem": "PowerShell",
+      "uso": "Relatório",
+      "autor": "Marlon",
+      "link": ""
+    },
+    {
+      "id": 3,
+      "nome": "Backup de Configurações",
+      "descricao": "Faz backup automático das configurações dos principais sistemas para pasta de rede.",
+      "linguagem": "Bash",
+      "uso": "Backup",
+      "autor": "Marlon",
+      "link": ""
+    },
+    {
+      "id": 4,
+      "nome": "Consulta de Pedidos",
+      "descricao": "Consulta diretamente no banco de dados o status de pedidos por intervalo de datas.",
+      "linguagem": "SQL",
+      "uso": "Consulta",
+      "autor": "Marlon",
+      "link": ""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "descricao": "Sistemas e ferramentas utilizados pelo time de suporte.",
+  "items": [
+    {
+      "id": 1,
+      "nome": "Sistema ERP",
+      "tipo": "ERP",
+      "descricao": "Sistema principal de gestão da empresa. Utilizado para pedidos, faturamento e estoque.",
+      "url": "https://erp.exemplo.com",
+      "status": "Ativo",
+      "responsavel": "TI",
+      "ambiente": "Produção",
+      "categoria": "Sistemas Internos"
+    },
+    {
+      "id": 2,
+      "nome": "CRM",
+      "tipo": "Gestão de Clientes",
+      "descricao": "Plataforma de relacionamento com clientes. Usado para registrar atendimentos e oportunidades.",
+      "url": "https://crm.exemplo.com",
+      "status": "Ativo",
+      "responsavel": "Comercial",
+      "ambiente": "Produção",
+      "categoria": "Sistemas Internos"
+    },
+    {
+      "id": 3,
+      "nome": "Painel de Monitoramento",
+      "tipo": "Observabilidade",
+      "descricao": "Dashboard de monitoramento de serviços e alertas em tempo real.",
+      "url": "https://monitor.exemplo.com",
+      "status": "Ativo",
+      "responsavel": "TI",
+      "ambiente": "Produção",
+      "categoria": "Infraestrutura"
+    },
+    {
+      "id": 4,
+      "nome": "Sistema Legado",
+      "tipo": "ERP Antigo",
+      "descricao": "Sistema anterior, mantido apenas para consulta histórica. Não recebe mais atualizações.",
+      "url": "",
+      "status": "Inativo",
+      "responsavel": "TI",
+      "ambiente": "Legado",
+      "categoria": "Infraestrutura"
+    }
+  ]
+}

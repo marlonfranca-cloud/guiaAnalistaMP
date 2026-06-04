@@ -1,0 +1,45 @@
+{
+  "descricao": "Pessoas e canais de contato importantes para o time de suporte.",
+  "items": [
+    {
+      "id": 1,
+      "nome": "Marlon França",
+      "cargo": "Analista de Suporte",
+      "departamento": "TI",
+      "email": "marlon.franca@multipedidos.com.br",
+      "telefone": "",
+      "slack": "@marlon",
+      "observacao": ""
+    },
+    {
+      "id": 2,
+      "nome": "Suporte N2",
+      "cargo": "Escalada Técnica",
+      "departamento": "TI",
+      "email": "suporte.n2@exemplo.com",
+      "telefone": "",
+      "slack": "#suporte-n2",
+      "observacao": "Acionar apenas após esgotadas as tentativas de N1"
+    },
+    {
+      "id": 3,
+      "nome": "Fornecedor ERP",
+      "cargo": "Suporte Externo",
+      "departamento": "Externo",
+      "email": "suporte@fornecedor.com",
+      "telefone": "(11) 9 9999-9999",
+      "slack": "",
+      "observacao": "Atendimento comercial: seg–sex, 8h–18h"
+    },
+    {
+      "id": 4,
+      "nome": "RH",
+      "cargo": "Recursos Humanos",
+      "departamento": "RH",
+      "email": "rh@exemplo.com",
+      "telefone": "",
+      "slack": "#rh",
+      "observacao": "Contato para onboarding e offboarding de colaboradores"
+    }
+  ]
+}
