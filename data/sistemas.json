@@ -3,47 +3,91 @@
   "items": [
     {
       "id": 1,
-      "nome": "Sistema",
-      "tipo": "ERP", 
-      "descricao": "Sistema principal de gestão da empresa. Utilizado para pedidos, faturamento e estoque.",
-      "url": "https://erp.exemplo.com",
+      "nome": "CRM",
+      "tipo": "Gestão de contratos", 
+      "descricao": "Sistema principal de gestão de contratos",
+      "url": "https://crm.multipedidos.com.br/clientes",
       "status": "Ativo",
-      "responsavel": "TI",
+      "responsavel": "",
       "ambiente": "Produção",
-      "categoria": "Sistemas Internos"
+      "categoria": "Principais sistemas"
     }, 
     { 
       "id": 2,
-      "nome": "CRM",
-      "tipo": "Gestão de Clientes",
-      "descricao": "Plataforma de relacionamento com clientes. Usado para registrar atendimentos e oportunidades.",
-      "url": "https://crm.exemplo.com",
+      "nome": "Discord",
+      "tipo": "Plataforma de Comunicação",
+      "descricao": "Plataforma de relacionamento com pessoas e chamados",
+      "url": "https://discord.com/channels/689989595617820716/689991985309679631",
       "status": "Ativo",
-      "responsavel": "Comercial",
+      "responsavel": "",
+      "ambiente": "Produção",
+      "categoria": "Principais sistemas"
+    },
+    {
+      "id": 3,
+      "nome": "CloudChat",
+      "tipo": "Chat de Atendimento",
+      "descricao": "Chat para atendimento de demandas em tempo real",
+      "url": "https://cloudchat2.cloudhumans.com/app/accounts/12/dashboard",
+      "status": "Ativo",
+      "responsavel": "",
+      "ambiente": "Produção",
+      "categoria": "Principais sistemas"
+    },
+    {
+      "id": 6,
+      "nome": "TOTVS",
+      "tipo": "ERP",
+      "descricao": "Plataforma para gestão de feedbacks, celebrações, desenvolvimento individual",
+      "url": "https://app.feedz.com.br/inicio#",
+      "status": "Ativo",
+      "responsavel": "",
+      "ambiente": "Produção",
+      "categoria": "Principais sistemas"
+    },
+    {
+      "id": 7,
+      "nome": "Io Point",
+      "tipo": "Controle de ponto",
+      "descricao": "Plataforma para gestão de batidas de ponto, escalas e horários",
+      "url": "https://webpoint.iopoint.com.br/point-list",
+      "status": "Ativo",
+      "responsavel": "",
+      "ambiente": "Produção",
+      "categoria": "Principais sistemas"
+    },
+    {
+      "id": 8,
+      "nome": "CRM Interno",
+      "tipo": "Gestão de Pessoas", 
+      "descricao": "Sistema principal de gestão de contratos",
+      "url": "https://crm.multipedidos.com.br/clientes",
+      "status": "Ativo",
+      "responsavel": "",
+      "ambiente": "Produção",
+      "categoria": "Principais sistemas"
+    },
+    {
+      "id": 101,
+      "nome": "Appsmith",
+      "tipo": "Processos Automatizados",
+      "descricao": "Software de automatização de processos manuais",
+      "url": "https://appsmith.multipedidos.com.br/applications",
+      "status": "Ativo",
+      "responsavel": "",
       "ambiente": "Produção",
       "categoria": "Sistemas Internos"
     },
     {
-      "id": 3,
-      "nome": "Painel de Monitoramento",
-      "tipo": "Observabilidade",
-      "descricao": "Dashboard de monitoramento de serviços e alertas em tempo real.",
-      "url": "https://monitor.exemplo.com",
+      "id": 102,
+      "nome": "Trello",
+      "tipo": "Processos Fiscais",
+      "descricao": "Gerenciamento das implantações fiscais",
+      "url": "https://trello.com/b/DHs6a3S3/modulo-fiscal-controle",
       "status": "Ativo",
-      "responsavel": "TI",
+      "responsavel": "",
       "ambiente": "Produção",
-      "categoria": "Infraestrutura"
-    },
-    {
-      "id": 4,
-      "nome": "Sistema Legado",
-      "tipo": "ERP Antigo",
-      "descricao": "Sistema anterior, mantido apenas para consulta histórica. Não recebe mais atualizações.",
-      "url": "",
-      "status": "Inativo",
-      "responsavel": "TI",
-      "ambiente": "Legado",
-      "categoria": "Infraestrutura"
+      "categoria": "Sistemas Internos"
     }
   ]
 }
