@@ -49,14 +49,20 @@
     header {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
-      padding: 0 24px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
       height: 60px;
       position: sticky;
       top: 0;
       z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 0 12px;
+      height: 100%;
     }
 
     .logo-icon {
@@ -120,10 +126,15 @@
     nav {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
-      padding: 0 24px;
+      overflow-x: auto;
+    }
+
+    .nav-inner {
       display: flex;
       gap: 4px;
-      overflow-x: auto;
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 0 12px;
     }
 
     nav::-webkit-scrollbar { height: 3px; }
@@ -454,8 +465,7 @@
 
     /* ── Responsive ── */
     @media (max-width: 600px) {
-      header { padding: 0 16px; }
-      nav { padding: 0 16px; }
+      .header-inner, .nav-inner { padding: 0 16px; }
       main { padding: 20px 16px; }
       .search-wrap input { width: 150px; }
       .cards-grid { grid-template-columns: 1fr; }
@@ -467,31 +477,35 @@
 
   <!-- Header -->
   <header>
-    <div class="logo-icon">🛠</div>
-    <h1>Guia do <span>Suporte MP</span></h1>
-    <div class="search-wrap">
-      <span class="search-icon">🔍</span>
-      <input type="text" id="searchInput" placeholder="Buscar..." oninput="filterCards()" />
+    <div class="header-inner">
+      <div class="logo-icon">🛠</div>
+      <h1>Guia do <span>Suporte MP</span></h1>
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Buscar..." oninput="filterCards()" />
+      </div>
     </div>
   </header>
 
   <!-- Tabs -->
   <nav>
-    <button class="tab-btn active" onclick="loadTab('sistemas')" data-tab="sistemas">
-      <span class="tab-icon">🖥</span> Sistemas
-    </button>
-    <button class="tab-btn" onclick="loadTab('processos')" data-tab="processos">
-      <span class="tab-icon">⚙️</span> Processos
-    </button>
-    <button class="tab-btn" onclick="loadTab('scripts')" data-tab="scripts">
-      <span class="tab-icon">📜</span> Regras de Negócio
-    </button>
-    <button class="tab-btn" onclick="loadTab('planilhas')" data-tab="planilhas">
-      <span class="tab-icon">📊</span> Planilhas
-    </button>
-    <button class="tab-btn" onclick="loadTab('contatos')" data-tab="contatos">
-      <span class="tab-icon">📞</span> Contatos úteis
-    </button>
+    <div class="nav-inner">
+      <button class="tab-btn active" onclick="loadTab('sistemas')" data-tab="sistemas">
+        <span class="tab-icon">🖥</span> Sistemas
+      </button>
+      <button class="tab-btn" onclick="loadTab('processos')" data-tab="processos">
+        <span class="tab-icon">⚙️</span> Processos
+      </button>
+      <button class="tab-btn" onclick="loadTab('scripts')" data-tab="scripts">
+        <span class="tab-icon">📜</span> Regras de Negócio
+      </button>
+      <button class="tab-btn" onclick="loadTab('planilhas')" data-tab="planilhas">
+        <span class="tab-icon">📊</span> Planilhas
+      </button>
+      <button class="tab-btn" onclick="loadTab('contatos')" data-tab="contatos">
+        <span class="tab-icon">📞</span> Contatos úteis
+      </button>
+    </div>
   </nav>
 
   <!-- Main -->
@@ -705,7 +719,7 @@
       .join('');
 
     const linkBtn = item.link
-      ? `<a class="btn btn-primary" href="${item.link}" target="_blank">⬇️ Download</a>`
+      ? `<a class="btn btn-primary" href="${item.link}" target="_blank">🔗 Acessar</a>`
       : '';
 
     return `
@@ -718,10 +732,8 @@
         </div>
       </div>
       ${item.descricao ? `<p class="card-desc">${item.descricao}</p>` : ''}
-      <div class="card-meta">
-        ${langTag}
-        ${item.uso ? `<span class="tag tag-default">${item.uso}</span>` : ''}
-      </div>
+      ${langTag ? `<div class="card-meta">${langTag}</div>` : ''}
+      ${item.uso ? `<div class="card-meta"><span class="tag tag-default">${item.uso}</span></div>` : ''}
       ${linkBtn ? `<div class="card-actions">${linkBtn}</div>` : ''}
     </div>`;
   }

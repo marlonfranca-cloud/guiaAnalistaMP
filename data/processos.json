@@ -43,11 +43,11 @@
     },
     {
       "id": 3,
-      "nome": "Acessar o Gestor sem login",
+      "nome": "Acessar o Gestor sem logar",
       "descricao": "Use quando houver problema no login ou você quiser visualizar o Gestor como o cliente",
       "categoria": "",
       "passos": [
-        "Encontre e clique no nome da loja no CRM",
+        "Encontre e clique no nome da loja do cliente no CRM",
         "Na barra lateral, encontre e clique sobre 'Copiar Link de Acesso'",
         "Abra o Gestor Desktop",
         "Use as teclas 'Ctrl' + 'Shift' + 'C' para abrir o devtools do Gestor",
@@ -57,10 +57,24 @@
     },
     {
       "id": 4,
-      "nome": "Novo Processo",
-      "descricao": "",
+      "nome": "Integração iFood",
+      "descricao": "Receber e gerir pedidos do iFood na Multipedidos",
       "categoria": "",
       "passos": [
+        "Confirme que o cliente quer integrar o iFood à Multipedidos",
+        "Envie a mensagem rápida /353 e aguarde o cliente enviar o código iFood",
+        "Copie o Nome e ID da loja + código iFood e envie no canal solicitacoes-ifood no Discord",
+        "Aguarde o ✅ na mensagem do Discord",
+        "Se em 5 minutos não houver resposta, peça que alguém aprove a solicitação na sala ao vivo",
+        "Mesmo que esteja com acesso remoto ao computador do cliente, realize os passos 7, 8 e 12 do seu computador",
+        "Com o código aprovado, acesse o gestor e vá para Sistema > Integrações > iFood e ative o debugmode()",
+        "Clique em 'Adicionar+' e cole o código iFood e clique em 'Enviar'",
+        "Envie a mensagem rápida /351 para o cliente e peça para o cliente seguir os passos descritos",
+        "Aguarde o cliente fazer a autorização no iFood",
+        "Com a autorização finalizada, envie a mensagem rápida /356 e confirme com o cliente que a mensagem foi compreendida",
+        "Volte à aba de integração iFood do gestor, marque a opção 'Ativar loja' e clique em 'Sincronizar Nome com iFood'",
+        "Recarregue a aba e confira se a integração permanece ativada e com o nome sincronizado",
+        "Informe ao cliente que a integração foi finalizada e oriente o cliente a monitorar os próximos pedidos iFood para confirmar que estão entrando normalmente."
       ]
     },
     {

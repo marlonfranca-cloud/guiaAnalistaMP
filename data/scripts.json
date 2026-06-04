@@ -6,7 +6,7 @@
       "nome": "PDV Simplificado",
       "descricao": "REQ: Plano iniciante + Wabot",
       "linguagem": "PDV",
-      "uso": "Somente Iniciante",
+      "uso": "Iniciante",
       "autor": "",
       "link": ""
     }, 
@@ -21,20 +21,20 @@
     },
     {
       "id": 3,
-      "nome": "Backup de Configurações",
-      "descricao": "Faz backup automático das configurações dos principais sistemas para pasta de rede.",
-      "linguagem": "Bash",
-      "uso": "Backup",
-      "autor": "Marlon",
-      "link": ""
+      "nome": "Fila de alteração",
+      "descricao": "Toda alteração de cardápio solicitada por cliente, exceto solicitações diretas de Ivan e Jonatas",
+      "linguagem": "",
+      "uso": "",
+      "autor": "",
+      "link": "https://discord.com/channels/689989595617820716/889991057104850974"
     },
     {
       "id": 4,
       "nome": "Consulta de Pedidos",
       "descricao": "Consulta diretamente no banco de dados o status de pedidos por intervalo de datas.",
-      "linguagem": "SQL",
-      "uso": "Consulta",
-      "autor": "Marlon",
+      "linguagem": "",
+      "uso": "",
+      "autor": "",
       "link": ""
     }
   ]
