@@ -3,8 +3,8 @@
   "items": [
     {
       "id": 1,
-      "nome": "Sistema ERP",
-      "tipo": "ERP",
+      "nome": "Sistema",
+      "tipo": "ERP", 
       "descricao": "Sistema principal de gestão da empresa. Utilizado para pedidos, faturamento e estoque.",
       "url": "https://erp.exemplo.com",
       "status": "Ativo",

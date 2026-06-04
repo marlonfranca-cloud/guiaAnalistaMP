@@ -1,7 +1,7 @@
 {
   "descricao": "Planilhas e templates utilizados pelo time.",
   "items": [
-    { 
+    {  
       "id": 1,
       "nome": "Controle de Chamados",
       "descricao": "Planilha para acompanhamento manual de chamados abertos, pendentes e encerrados no mês.",

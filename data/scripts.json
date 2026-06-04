@@ -1,7 +1,7 @@
 {
   "descricao": "Scripts e automações disponíveis para uso do time de suporte.",
   "items": [
-    {
+    { 
       "id": 1,
       "nome": "Limpeza de Cache",
       "descricao": "Remove arquivos temporários e cache do sistema para liberar espaço em disco.",
