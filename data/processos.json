@@ -59,7 +59,7 @@
       "id": 4,
       "nome": "Integração iFood",
       "descricao": "Receber e gerir pedidos do iFood na Multipedidos",
-      "categoria": "Gestor",
+      "categoria": "Integrações",
       "passos": [
         "Confirme que o cliente quer integrar o iFood à Multipedidos",
         "Envie a mensagem rápida /353 e aguarde o cliente enviar o código iFood",
@@ -114,7 +114,7 @@
       "id": 7,
       "nome": "Integração 99 Food",
       "descricao": "",
-      "categoria": "Gestor",
+      "categoria": "Integrações",
       "passos": [
         "Acesse remotamente o computador do cliente", 
         "Acesse o página admin da 99 Food", 
@@ -134,43 +134,126 @@
     },
     {
       "id": 8,
-      "nome": "Novo Processo",
-      "descricao": "",
-      "categoria": "",
+      "nome": "Impressão Duplicada",
+      "descricao": "Impressora imprimindo duas vezes o mesmo pedido",
+      "categoria": "Impressão",
       "passos": [
-
+        "Confirme em qual computador a impressora está instalada",
+        "Compare o nome da impressora em todos os computadores que imprimem",
+        "Verifique se o Gestor está aberto em mais de um lugar (navegador e app)",
+        "Se persistir: reinicie o serviço de impressão e teste com uma impressão simples",
+        "Se persistir: registre evidências (print da fila de impressão e do nome da impressora) e acione o suporte"
       ]
     },
     {
       "id": 9,
-      "nome": "Novo Processo",
-      "descricao": "",
-      "categoria": "",
+      "nome": "Incluir Faixa de IP Extra na Rede",
+      "descricao": "Adicionar IP temporário para acessar impressora em outra faixa de rede",
+      "categoria": "Impressão",
       "passos": [
+        "Abra as Conexões de Rede: Painel de Controle > Rede e Internet > Central de Rede e Compartilhamento > Alterar as configurações do adaptador",
+        "Clique com o botão direito no adaptador em uso > Propriedades",
+        "Selecione Protocolo IP Versão 4 (TCP/IPv4) > Propriedades > Avançado",
+        "Em Endereços IP, clique em Adicionar e preencha o IP e a máscara da faixa da impressora",
+        "Clique em OK para salvar e valide com ping ou acesso pelo navegador",
+        "Após resolver o problema, remova o IP adicional pelo mesmo caminho (obrigatório)"
       ]
     },
     {
       "id": 10,
-      "nome": "Novo Processo",
-      "descricao": "",
-      "categoria": "",
+      "nome": "WhatsApp em Load Infinito",
+      "descricao": "Gestor travado carregando o WhatsApp indefinidamente",
+      "categoria": "Wabot",
       "passos": [
+        "Clique em 'Recarregar WhatsApp' no canto superior esquerdo",
+        "Se não reiniciar, reinicie o Gestor manualmente",
+        "Se persistir, apague mensagens do WhatsApp para aliviar a sincronização",
+        "Em casos graves, apague mais mensagens e realize uma reinstalação limpa do Gestor"
       ]
     },
     {
       "id": 11,
-      "nome": "Novo Processo",
-      "descricao": "",
-      "categoria": "",
+      "nome": "Wabot Não Responde o Cliente",
+      "descricao": "Bot do WhatsApp ativo mas sem enviar respostas automáticas",
+      "categoria": "Wabot",
       "passos": [
+        "Verifique a conexão na tela do WhatsApp dentro do sistema",
+        "No botão de ações (canto superior esquerdo), confirme se o Wabot está ativo",
+        "Se ativo mas sem resposta, reinicie o Gestor",
+        "Se persistir, use o botão para reiniciar o WhatsApp (limpa dados e reconecta)",
+        "Se nada resolver, acione o suporte técnico interno"
       ]
     },
     {
       "id": 12,
-      "nome": "Novo Processo",
-      "descricao": "",
-      "categoria": "",
+      "nome": "Criar Executável do Gestor Web",
+      "descricao": "Instalar o Gestor como app no computador do cliente",
+      "categoria": "Gestor",
       "passos": [
+        "Conecte-se remotamente ao computador do cliente",
+        "Abra o navegador, acesse multipedidos.com.br e faça login no sistema",
+        "No menu do navegador, encontre a opção de instalar ou salvar como app (Windows 10: Salvar e compartilhar > Instalar página como app)",
+        "O ícone laranja do Gestor será criado na área de trabalho",
+        "Oriente o cliente a acessar o Gestor apenas por esse ícone daqui em diante"
+      ]
+    },
+    {
+      "id": 13,
+      "nome": "Adicionar Certificado Digital",
+      "descricao": "Inserir certificado digital no sistema para emissão de NF",
+      "categoria": "Fiscal",
+      "passos": [
+        "Envie ao cliente a mensagem rápida 861 - inserir certificado digital com o passo a passo",
+        "Se o cliente insistir para que a equipe faça, acesse remotamente o computador do cliente e insira o arquivo",
+        "Informe ao cliente que o certificado foi adicionado e que ele pode emitir notas fiscais",
+        "Pergunte se deseja algo mais e finalize o atendimento"
+      ]
+    },
+    {
+      "id": 14,
+      "nome": "Link de Pedido Aparece como Fechado",
+      "descricao": "Link do cardápio online exibindo loja fechada para o cliente",
+      "categoria": "Gestor",
+      "passos": [
+        "Na aba de pedidos, verifique se há aviso em vermelho de loja fechada; se houver, clique em 'Abrir loja'",
+        "Verifique se o caixa está aberto (disponível apenas no Plano Profissional)",
+        "Acesse Configurações > Horários > Editar e confirme que o horário atual está dentro do período destacado em verde"
+      ]
+    },
+    {
+      "id": 15,
+      "nome": "Editor de Produtos Duplicando Preço",
+      "descricao": "Produto cobrando o valor em dobro no cardápio",
+      "categoria": "Gestor",
+      "passos": [
+        "Confirme com o cliente qual produto está duplicando o preço",
+        "No Editor de Produtos, localize o produto e apague o valor da linha, mantendo apenas o valor no extra",
+        "Envie prints ao cliente para que ele aprenda a corrigir futuramente",
+        "Pergunte se deseja algo mais e finalize o atendimento"
+      ]
+    },
+    {
+      "id": 16,
+      "nome": "Falha na Emissão por Certificado Digital",
+      "descricao": "Nota fiscal negada por problema no certificado digital",
+      "categoria": "Fiscal",
+      "passos": [
+        "Acesse o sistema do cliente e navegue até Notas Fiscais > Negadas",
+        "Localize a nota negada e clique na lupa para ver o motivo (destacado em amarelo)",
+        "Se o motivo indicar certificado digital, informe ao cliente (com print) que ele deve contatar a contabilidade para renovar",
+        "Após a renovação, oriente o cliente a adicionar o novo arquivo de certificado ao sistema",
+        "Pergunte se deseja algo mais e finalize o atendimento"
+      ]
+    },
+    {
+      "id": 17,
+      "nome": "Integração com a Repediu",
+      "descricao": "Conectar o sistema à plataforma Repediu",
+      "categoria": "Integrações",
+      "passos": [
+        "Nas configurações de integrações do sistema, gere o token de integração",
+        "Insira o token gerado na plataforma da Repediu junto com o ID do restaurante",
+        "Nenhuma configuração adicional é necessária no sistema"
       ]
     }
   ]
