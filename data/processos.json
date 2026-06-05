@@ -5,7 +5,7 @@
       "id": 1,
       "nome": "Reset de Senha",
       "descricao": "Senha temporária: 12345",
-      "categoria": "",
+      "categoria": "CRM",
       "passos": [
         "Confirme a loja do usuário e a necessidade do reset de senha",
         "Acesse a loja do cliente no CRM",
@@ -25,7 +25,7 @@
       "id": 2,
       "nome": "Desbloqueio temporário",
       "descricao": "Desbloqueio temporário = 24h (até o dia seguinte)",
-      "categoria": "",
+      "categoria": "CRM",
       "passos": [
         "Confirme a loja do cliente e a necessidade do desbloqueio",
         "No CRM, pesquise a loja e clique em 'Histórico do restaurante'",
@@ -45,7 +45,7 @@
       "id": 3,
       "nome": "Acessar o Gestor sem logar",
       "descricao": "Use quando houver problema no login ou você quiser visualizar o Gestor como o cliente",
-      "categoria": "",
+      "categoria": "Gestor",
       "passos": [
         "Encontre e clique no nome da loja do cliente no CRM",
         "Na barra lateral, encontre e clique sobre 'Copiar Link de Acesso'",
@@ -59,7 +59,7 @@
       "id": 4,
       "nome": "Integração iFood",
       "descricao": "Receber e gerir pedidos do iFood na Multipedidos",
-      "categoria": "",
+      "categoria": "Gestor",
       "passos": [
         "Confirme que o cliente quer integrar o iFood à Multipedidos",
         "Envie a mensagem rápida /353 e aguarde o cliente enviar o código iFood",
@@ -79,27 +79,57 @@
     },
     {
       "id": 5,
-      "nome": "Novo Processo",
+      "nome": "Reativação de clientes",
       "descricao": "",
-      "categoria": "",
+      "categoria": "CRM",
       "passos": [
+        "Confirme a loja do cliente e localize no CRM",
+        "Há quanto tempo o cliente está cancelado?",
+        "+3 MESES: pule para o passo 7",
+        "3 MESES OU MENOS: confirme o plano desejado para reativar",
+        "Gere a fatura referente ao novo plano/reativação",
+        "Altere o status do cliente para 'Ativo' no CRM e informe ao cliente que a reativação já foi realizada",
+        "Acesse o link 'Processos Suporte' > 'Reativação e interessados' e preencha os dados do cliente",
+        "Informe ao cliente que a reativação já foi enviada, basta aguardar o contato do Comercial."
+
       ]
     },
     {
       "id": 6,
-      "nome": "Novo Processo",
-      "descricao": "",
-      "categoria": "",
+      "nome": "Criar lista de transmissão para todos os clientes",
+      "descricao": "Enviar uma lista de transmissão para todos os clientes com  Wabot.",
+      "categoria": "Gestor",
       "passos": [
+        "Acesse remotamente o computador do cliente",
+        "No Gestor Desktop, abra o devtools usando as teclas 'Ctrl' + 'Shift' + 'C'",
+        "Digite 'debugMode()' e pressione 'Enter'",
+        "Volte ao Gestor e acesse 'Venda+' > 'Listas de Transmissão'",
+        "Clique em 'Nova lista de transmissão' e preencha os dados da lista",
+        "Clique em 'TODOS OS CLIENTES'",
+        "Oriente o cliente a ler a nova janela que será aberta e digitar 'aceitar riscos'",
+        "Para iniciar a lista, clique em 'Iniciar'"
       ]
     },
     {
       "id": 7,
-      "nome": "Novo Processo",
+      "nome": "Integração 99 Food",
       "descricao": "",
-      "categoria": "",
+      "categoria": "Gestor",
       "passos": [
-  
+        "Acesse remotamente o computador do cliente", 
+        "Acesse o página admin da 99 Food", 
+        "No menu lateral, clique em 'Lojas'", 
+        "Na loja a ser integrada, clique no ícone de Configurações ⚙️", 
+        "Copie o código da loja", 
+        "Acesse o Gestor Multipedidos e clique em 'Sistema' > 'Integrações' > '99 Food'", 
+        "Clique em 'Adicionar Loja' e cole o código da loja", 
+        "Clique em 'Autorizar no 99 Food'", 
+        "É provável que o cliente precise logar novamente na página que vai se abrir", 
+        "Depois do login, verifique se o nome da loja informado está correto", 
+        "Se sim, clique em 'Confirmar autorização e continuar'", 
+        "Marque a caixa da loja do cliente e clique novamente em 'Autorizar'", 
+        "TERMINAR", 
+        "" 
       ]
     },
     {
