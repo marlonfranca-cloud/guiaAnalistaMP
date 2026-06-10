@@ -394,6 +394,55 @@
     .card-processo::-webkit-scrollbar-thumb { background: var(--border); border-radius: var(--radius); }
     .card-processo::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
 
+    /* ── Modo resumido ── */
+    .resumo-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .resumo-tag {
+      background: var(--text-dim);
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 20px;
+      line-height: 1.4;
+    }
+
+    /* ── Botão toggle de visualização ── */
+    .view-toggle {
+      display: none;
+      align-items: center;
+      gap: 4px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2px;
+    }
+
+    .view-toggle.visible { display: flex; }
+
+    .view-toggle-btn {
+      background: transparent;
+      border: none;
+      border-radius: 18px;
+      padding: 5px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-dim);
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+
+    .view-toggle-btn.active {
+      background: var(--orange-glow);
+      color: #fff;
+    }
+
     /* ── Passos (Processos) ── */
     .steps-list {
       list-style: none;
@@ -480,6 +529,10 @@
     <div class="header-inner">
       <div class="logo-icon">🛠</div>
       <h1>Guia do <span>Suporte MP</span></h1>
+      <div class="view-toggle" id="viewToggle">
+        <button class="view-toggle-btn active" id="btnCompleto" onclick="setViewMode('completo')">Completo</button>
+        <button class="view-toggle-btn" id="btnResumido" onclick="setViewMode('resumido')">Resumido</button>
+      </div>
       <div class="search-wrap">
         <span class="search-icon">🔍</span>
         <input type="text" id="searchInput" placeholder="Buscar..." oninput="filterCards()" />
@@ -520,8 +573,18 @@
   // ── State ──
   let currentTab = 'sistemas';
   let allItems = [];
+  let currentData = {};
+  let viewMode = 'completo'; // 'completo' | 'resumido'
 
   // ── Tab loading ──
+  function setViewMode(mode) {
+    viewMode = mode;
+    document.getElementById('btnCompleto').classList.toggle('active', mode === 'completo');
+    document.getElementById('btnResumido').classList.toggle('active', mode === 'resumido');
+    renderTab(currentTab, currentData);
+    filterCards();
+  }
+
   function loadTab(tab) {
     currentTab = tab;
 
@@ -529,6 +592,10 @@
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.tab === tab);
     });
+
+    // Show/hide view toggle
+    const toggle = document.getElementById('viewToggle');
+    toggle.classList.toggle('visible', tab === 'processos');
 
     // Clear search
     document.getElementById('searchInput').value = '';
@@ -541,6 +608,7 @@
       })
       .then(data => {
         allItems = data.items || [];
+        currentData = data;
         renderTab(tab, data);
       })
       .catch(err => {
@@ -678,18 +746,26 @@
   }
 
   function cardProcesso(item) {
-    const stepsHtml = item.passos && item.passos.length
-      ? `<ul class="steps-list">${item.passos.map((p, i) =>
-          `<li><span class="step-num">${i+1}</span><span>${p}</span></li>`
-        ).join('')}</ul>`
-      : '';
+    const isResumido = viewMode === 'resumido';
+
+    const bodyHtml = isResumido
+      ? (item.resumo && item.resumo.length
+          ? `<div class="resumo-list">${item.resumo.map(r =>
+              `<span class="resumo-tag">${r}</span>`
+            ).join('')}</div>`
+          : '')
+      : (item.passos && item.passos.length
+          ? `<ul class="steps-list">${item.passos.map((p, i) =>
+              `<li><span class="step-num">${i+1}</span><span>${p}</span></li>`
+            ).join('')}</ul>`
+          : '');
 
     const linkBtn = item.link
       ? `<a class="btn btn-primary" href="${item.link}" target="_blank">📄 Ver doc</a>`
       : '';
 
     return `
-    <div class="card card-processo" data-search="${searchText(item)}">
+    <div class="card card-processo" data-search="${searchText(item)}" data-id="${item.id}">
       <div class="card-top">
         <div class="card-icon">⚙️</div>
         <div class="card-title-wrap">
@@ -698,7 +774,7 @@
         </div>
       </div>
       ${item.descricao ? `<p class="card-desc">${item.descricao}</p>` : ''}
-      ${stepsHtml}
+      ${bodyHtml}
       ${linkBtn ? `<div class="card-actions" style="margin-top:12px">${linkBtn}</div>` : ''}
     </div>`;
   }

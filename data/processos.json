@@ -6,6 +6,13 @@
       "nome": "Reset de Senha",
       "descricao": "Senha temporária: 12345",
       "categoria": "CRM",
+      "resumo": [
+        "Confirmar loja",
+        "número do chat == responsável?",
+        "NÃO == chamar responsável",
+        "SIM == CRM: 'Resetar senha'",
+        "senha 12345, troca 1º acesso"
+      ],
       "passos": [
         "Confirme a loja do usuário e a necessidade do reset de senha",
         "Acesse a loja do cliente no CRM",
@@ -26,6 +33,14 @@
       "nome": "Desbloqueio temporário",
       "descricao": "Desbloqueio temporário = 24h (até o dia seguinte)",
       "categoria": "CRM",
+      "resumo": [
+        "histórico desbloqueios",
+        "0 → cliente faz sozinho",
+        "1 → 30 min → 2º desbloqueio",
+        "2 → hora abertura → 3º desbloqueio",
+        "3+ → grupo WhatsApp",
+        "Seguir orientação do grupo"
+      ],
       "passos": [
         "Confirme a loja do cliente e a necessidade do desbloqueio",
         "No CRM, pesquise a loja e clique em 'Histórico do restaurante'",
@@ -46,6 +61,10 @@
       "nome": "Acessar o Gestor sem logar",
       "descricao": "Use quando houver problema no login ou você quiser visualizar o Gestor como o cliente",
       "categoria": "Gestor",
+      "resumo": [
+        "CRM → 'Copiar Link de Acesso'",
+        "Gestor Desktop → DevTools == window.location.href='link'"
+      ],
       "passos": [
         "Encontre e clique no nome da loja do cliente no CRM",
         "Na barra lateral, encontre e clique sobre 'Copiar Link de Acesso'",
@@ -60,6 +79,13 @@
       "nome": "Integração iFood",
       "descricao": "Receber e gerir pedidos do iFood na Multipedidos",
       "categoria": "Integrações",
+      "resumo": [
+        "código iFood no discord até ✅",
+        "Integrações > iFood → debugmode()",
+        "Adicionar+ → colar código → Enviar",
+        "Enviar /351 → autorização no iFood",
+        "Enviar /356 → Ativar loja + Sincronizar Nome iFood"
+      ],
       "passos": [
         "Confirme que o cliente quer integrar o iFood à Multipedidos",
         "Envie a mensagem rápida /353 e aguarde o cliente enviar o código iFood",
@@ -82,6 +108,13 @@
       "nome": "Reativação de clientes",
       "descricao": "",
       "categoria": "CRM",
+      "resumo": [
+        "Localizar loja no CRM",
+        "+3 meses → Comercial",
+        "≤3 meses → confirmar plano → gerar fatura",
+        "Mudar para 'Ativo' no CRM",
+        "Preencher planilha de reativação"
+      ],
       "passos": [
         "Confirme a loja do cliente e localize no CRM",
         "Há quanto tempo o cliente está cancelado?",
@@ -91,7 +124,6 @@
         "Altere o status do cliente para 'Ativo' no CRM e informe ao cliente que a reativação já foi realizada",
         "Acesse o link 'Processos Suporte' > 'Reativação e interessados' e preencha os dados do cliente",
         "Informe ao cliente que a reativação já foi enviada, basta aguardar o contato do Comercial."
-
       ]
     },
     {
@@ -99,6 +131,13 @@
       "nome": "Criar lista de transmissão para todos os clientes",
       "descricao": "Enviar uma lista de transmissão para todos os clientes com  Wabot.",
       "categoria": "Gestor",
+      "resumo": [
+        "Acesso remoto",
+        "Ativar debugmode no Gestor Desktop",
+        "Venda+ > Listas de Transmissão → Nova lista",
+        "Clicar em 'TODOS OS CLIENTES'",
+        "'aceitar riscos' → Iniciar"
+      ],
       "passos": [
         "Acesse remotamente o computador do cliente",
         "No Gestor Desktop, abra o devtools usando as teclas 'Ctrl' + 'Shift' + 'C'",
@@ -115,21 +154,29 @@
       "nome": "Integração 99 Food",
       "descricao": "",
       "categoria": "Integrações",
+      "resumo": [
+        "Acesso remoto → admin 99 Food",
+        "Lojas → Configurações → código da loja",
+        "Sistema > Integrações > 99 Food",
+        "Adicionar Loja → colar código → Autorizar no 99 Food",
+        "Cliente faz login → confirmar nome da loja",
+        "Marcar caixa da loja → Autorizar"
+      ],
       "passos": [
-        "Acesse remotamente o computador do cliente", 
-        "Acesse o página admin da 99 Food", 
-        "No menu lateral, clique em 'Lojas'", 
-        "Na loja a ser integrada, clique no ícone de Configurações ⚙️", 
-        "Copie o código da loja", 
-        "Acesse o Gestor Multipedidos e clique em 'Sistema' > 'Integrações' > '99 Food'", 
-        "Clique em 'Adicionar Loja' e cole o código da loja", 
-        "Clique em 'Autorizar no 99 Food'", 
-        "É provável que o cliente precise logar novamente na página que vai se abrir", 
-        "Depois do login, verifique se o nome da loja informado está correto", 
-        "Se sim, clique em 'Confirmar autorização e continuar'", 
-        "Marque a caixa da loja do cliente e clique novamente em 'Autorizar'", 
-        "TERMINAR", 
-        "" 
+        "Acesse remotamente o computador do cliente",
+        "Acesse o página admin da 99 Food",
+        "No menu lateral, clique em 'Lojas'",
+        "Na loja a ser integrada, clique no ícone de Configurações ⚙️",
+        "Copie o código da loja",
+        "Acesse o Gestor Multipedidos e clique em 'Sistema' > 'Integrações' > '99 Food'",
+        "Clique em 'Adicionar Loja' e cole o código da loja",
+        "Clique em 'Autorizar no 99 Food'",
+        "É provável que o cliente precise logar novamente na página que vai se abrir",
+        "Depois do login, verifique se o nome da loja informado está correto",
+        "Se sim, clique em 'Confirmar autorização e continuar'",
+        "Marque a caixa da loja do cliente e clique novamente em 'Autorizar'",
+        "TERMINAR",
+        ""
       ]
     },
     {
@@ -137,6 +184,13 @@
       "nome": "Impressão Duplicada",
       "descricao": "Impressora imprimindo duas vezes o mesmo pedido",
       "categoria": "Impressão",
+      "resumo": [
+        "Checar em qual PC a impressora está instalada",
+        "Comparar nome da impressora em todos os PCs",
+        "Gestor aberto em 2 pc",
+        "CONTINUAR DAQUI",
+        ""
+      ],
       "passos": [
         "Confirme em qual computador a impressora está instalada",
         "Compare o nome da impressora em todos os computadores que imprimem",
@@ -150,6 +204,13 @@
       "nome": "Incluir Faixa de IP Extra na Rede",
       "descricao": "Adicionar IP temporário para acessar impressora em outra faixa de rede",
       "categoria": "Impressão",
+      "resumo": [
+        "Painel de Controle > Adaptadores de Rede",
+        "Botão direito no adaptador → Propriedades",
+        "IPv4 → Propriedades → Avançado → Adicionar IP + máscara",
+        "Validar com ping ou navegador",
+        "⚠️ Remover o IP adicional após resolver"
+      ],
       "passos": [
         "Abra as Conexões de Rede: Painel de Controle > Rede e Internet > Central de Rede e Compartilhamento > Alterar as configurações do adaptador",
         "Clique com o botão direito no adaptador em uso > Propriedades",
@@ -164,6 +225,12 @@
       "nome": "WhatsApp em Load Infinito",
       "descricao": "Gestor travado carregando o WhatsApp indefinidamente",
       "categoria": "Wabot",
+      "resumo": [
+        "'Recarregar WhatsApp' (canto superior esquerdo)",
+        "Sem melhora → reiniciar o Gestor",
+        "Persistindo → apagar mensagens do WhatsApp",
+        "Grave → apagar mais mensagens + reinstalação limpa"
+      ],
       "passos": [
         "Clique em 'Recarregar WhatsApp' no canto superior esquerdo",
         "Se não reiniciar, reinicie o Gestor manualmente",
@@ -174,8 +241,15 @@
     {
       "id": 11,
       "nome": "Wabot Não Responde o Cliente",
-      "descricao": "Bot do WhatsApp ativo mas sem enviar respostas automáticas",
+      "descricao": "Wabot ativo sem enviar respostas",
       "categoria": "Wabot",
+      "resumo": [
+        "Conexão do WhatsApp no sistema",
+        "Confirmar se Wabot está ativo (botão de ações)",
+        "Ativo sem resposta → reiniciar Gestor",
+        "Persistindo → reiniciar WhatsApp (limpa dados)",
+        "Sem solução → acionar suporte técnico"
+      ],
       "passos": [
         "Verifique a conexão na tela do WhatsApp dentro do sistema",
         "No botão de ações (canto superior esquerdo), confirme se o Wabot está ativo",
@@ -189,9 +263,15 @@
       "nome": "Criar Executável do Gestor Web",
       "descricao": "Instalar o Gestor como app no computador do cliente",
       "categoria": "Gestor",
+      "resumo": [
+        "Acesso remoto → app.multipedidos.com.br → login",
+        "Menu do navegador → Instalar como app",
+        "Win 10: Salvar e compartilhar > Instalar página como app",
+        "Ícone laranja na área de trabalho → orientar cliente a usar só ele"
+      ],
       "passos": [
         "Conecte-se remotamente ao computador do cliente",
-        "Abra o navegador, acesse multipedidos.com.br e faça login no sistema",
+        "Abra o navegador, acesse app.multipedidos.com.br e faça login no sistema",
         "No menu do navegador, encontre a opção de instalar ou salvar como app (Windows 10: Salvar e compartilhar > Instalar página como app)",
         "O ícone laranja do Gestor será criado na área de trabalho",
         "Oriente o cliente a acessar o Gestor apenas por esse ícone daqui em diante"
@@ -202,11 +282,17 @@
       "nome": "Adicionar Certificado Digital",
       "descricao": "Inserir certificado digital no sistema para emissão de NF",
       "categoria": "Fiscal",
+      "resumo": [
+        "Enviar /861",
+        "Cliente insiste → acessar remoto e inserir arquivo",
+        "Confirmar adição → finalizar"
+      ],
       "passos": [
-        "Envie ao cliente a mensagem rápida 861 - inserir certificado digital com o passo a passo",
+        "Envie ao cliente a mensagem rápida /861 - inserir o certificado digital",
         "Se o cliente insistir para que a equipe faça, acesse remotamente o computador do cliente e insira o arquivo",
-        "Informe ao cliente que o certificado foi adicionado e que ele pode emitir notas fiscais",
-        "Pergunte se deseja algo mais e finalize o atendimento"
+        "Crie um pedido teste e emita a nota fiscal",
+        "Se funcionar, informe o cliente e finalize",
+        "Se não funcionar, verifique o motivo do erro da emissão"
       ]
     },
     {
@@ -214,6 +300,11 @@
       "nome": "Link de Pedido Aparece como Fechado",
       "descricao": "Link do cardápio online exibindo loja fechada para o cliente",
       "categoria": "Gestor",
+      "resumo": [
+        "Aviso vermelho na aba de pedidos → 'Abrir loja'",
+        "Verificar se o caixa está aberto (Plano Profissional)",
+        "Configurações > Horários > confirmar período verde"
+      ],
       "passos": [
         "Na aba de pedidos, verifique se há aviso em vermelho de loja fechada; se houver, clique em 'Abrir loja'",
         "Verifique se o caixa está aberto (disponível apenas no Plano Profissional)",
@@ -225,6 +316,11 @@
       "nome": "Editor de Produtos Duplicando Preço",
       "descricao": "Produto cobrando o valor em dobro no cardápio",
       "categoria": "Gestor",
+      "resumo": [
+        "Confirmar produto com o cliente",
+        "Editor de Produtos → apagar valor da linha (manter valor no extra)",
+        "Enviar print para o cliente aprender a corrigir"
+      ],
       "passos": [
         "Confirme com o cliente qual produto está duplicando o preço",
         "No Editor de Produtos, localize o produto e apague o valor da linha, mantendo apenas o valor no extra",
@@ -237,6 +333,12 @@
       "nome": "Falha na Emissão por Certificado Digital",
       "descricao": "Nota fiscal negada por problema no certificado digital",
       "categoria": "Fiscal",
+      "resumo": [
+        "NF > Negadas → lupa → motivo em amarelo",
+        "Motivo = certificado? → informar cliente com print",
+        "Orientar renovação com a contabilidade",
+        "Após renovação → adicionar novo arquivo no sistema"
+      ],
       "passos": [
         "Acesse o sistema do cliente e navegue até Notas Fiscais > Negadas",
         "Localize a nota negada e clique na lupa para ver o motivo (destacado em amarelo)",
@@ -250,6 +352,11 @@
       "nome": "Integração com a Repediu",
       "descricao": "Conectar o sistema à plataforma Repediu",
       "categoria": "Integrações",
+      "resumo": [
+        "Configurações de integrações → gerar token",
+        "Repediu: inserir token + ID do restaurante",
+        "Nenhuma configuração adicional necessária"
+      ],
       "passos": [
         "Nas configurações de integrações do sistema, gere o token de integração",
         "Insira o token gerado na plataforma da Repediu junto com o ID do restaurante",
