@@ -40,6 +40,16 @@
       "telefone": "+55 47 99192-5352",
       "slack": "Discord: Comercial",
       "observacao": "Contato para interessados e novos clientes"
+    },
+    {
+      "id": 5,
+      "nome": "Suporte Multipedidos",
+      "cargo": "Suporte",
+      "departamento": "Suporte",
+      "email": "suporte@multipedidos.com.br",
+      "telefone": "+55 47 99954-8215",
+      "slack": "Discord: Suporte",
+      "observacao": "Contato para interessados em suporte"
     }
   ]
 }

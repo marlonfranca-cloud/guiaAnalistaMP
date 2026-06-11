@@ -29,10 +29,10 @@
       "link": "https://discord.com/channels/689989595617820716/889991057104850974"
     },
     {
-      "id": 4,
-      "nome": "Consulta de Pedidos",
-      "descricao": "Consulta diretamente no banco de dados o status de pedidos por intervalo de datas.",
-      "linguagem": "",
+      "id": 5,
+      "nome": "TEF obrigatório",
+      "descricao": "Legislação obrigatória no CE (Ceará), MT (Mato Grosso) e RS (Rio Grande do Sul)",
+      "linguagem": "fiscal",
       "uso": "",
       "autor": "",
       "link": ""
