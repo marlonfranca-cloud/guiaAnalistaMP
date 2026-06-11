@@ -260,6 +260,7 @@
 
     .card-desc {
       font-size: 13px;
+      white-space: pre-line;
       color: var(--text-muted);
       line-height: 1.55;
       margin-bottom: 14px;
@@ -549,7 +550,7 @@
       <button class="tab-btn" onclick="loadTab('processos')" data-tab="processos">
         <span class="tab-icon">⚙️</span> Processos
       </button>
-      <button class="tab-btn" onclick="loadTab('scripts')" data-tab="scripts">
+      <button class="tab-btn" onclick="loadTab('regrasDeNegocio')" data-tab="regrasDeNegocio">
         <span class="tab-icon">📜</span> Regras de Negócio
       </button>
       <button class="tab-btn" onclick="loadTab('planilhas')" data-tab="planilhas">
@@ -634,7 +635,7 @@
     const descriptions = {
       sistemas:  'Sistemas e ferramentas utilizados pelo time.',
       processos: 'Processos e fluxos de trabalho padronizados.',
-      scripts:   'Regras de negócio aplicáveis aos clientes.',
+      regrasdeNegocio:'Regras de negócio aplicáveis aos clientes.',
       planilhas: 'Planilhas e templates para consulta e uso.',
       contatos:  'Pessoas e canais de contato importantes.'
     };
@@ -642,7 +643,7 @@
     const icons = {
       sistemas:  '🖥',
       processos: '⚙️',
-      scripts:   '📜',
+      regrasDeNegocio:   '📜',
       planilhas: '📊',
       contatos:  '📞'
     };
@@ -650,7 +651,7 @@
     const labels = {
       sistemas:  'Sistemas',
       processos: 'Processos',
-      scripts:   'Regras de negócio',
+      regrasDeNegocio:   'Regras de negócio',
       planilhas: 'Planilhas',
       contatos:  'Contatos úteis'
     };
@@ -702,7 +703,7 @@
     switch(tab) {
       case 'sistemas':  return cardSistema(item);
       case 'processos': return cardProcesso(item);
-      case 'scripts':   return cardScript(item);
+      case 'regrasDeNegocio':   return cardScript(item);
       case 'planilhas': return cardPlanilha(item);
       case 'contatos':  return cardContato(item);
       default: return '';
@@ -785,6 +786,7 @@
       'Wabot': 'tag-green',
       'Pix': 'tag-yellow',
       'NFC-e': 'tag-orange',
+      'TEF' : 'tag-orange',
       '': 'tag-orange',
     };
     const linguagens = Array.isArray(item.linguagem)

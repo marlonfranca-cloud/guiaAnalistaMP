@@ -3,6 +3,14 @@
   "items": [
     { 
       "id": 1,
+      "nome": "Desbloqueio temporário",
+      "descricao": "• 1º desbloqueio: cliente faz \n • 2º desbloqueio: 30min \n • 3º desbloqueio: abertura da loja \n • 4º desbloqueio ou mais: financeiro",
+      "linguagem": "Gestor",
+      "uso": "Iniciante",
+      "autor": "",
+      "link": ""
+    },{ 
+      "id": 2,
       "nome": "PDV Simplificado",
       "descricao": "REQ: Plano iniciante + Wabot",
       "linguagem": "PDV",
@@ -11,7 +19,7 @@
       "link": ""
     }, 
     {
-      "id": 2,
+      "id": 3,
       "nome": "Wabot por R$9,90",
       "descricao": "REQ: Qualquer plano + Pix Automático",
       "linguagem": ["Wabot", "Pix"],
@@ -20,9 +28,9 @@
       "link": ""
     },
     {
-      "id": 3,
+      "id": 4,
       "nome": "Fila de alteração",
-      "descricao": "Toda alteração de cardápio solicitada por cliente, exceto solicitações diretas de Ivan e Jonatas",
+      "descricao": "Não fazer alterações durante atendimento, encaminhar para o canal #fila-de-alterações",
       "linguagem": "",
       "uso": "",
       "autor": "",
@@ -31,8 +39,8 @@
     {
       "id": 5,
       "nome": "TEF obrigatório",
-      "descricao": "Legislação obrigatória no CE (Ceará), MT (Mato Grosso) e RS (Rio Grande do Sul)",
-      "linguagem": "fiscal",
+      "descricao": ["Legislação obrigatória:\n • Ceará (CE)\n • Mato Grosso (MT)\n • Rio Grande do Sul (RS)"],
+      "linguagem": "TEF",
       "uso": "",
       "autor": "",
       "link": ""
