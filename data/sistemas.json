@@ -17,7 +17,7 @@
       "nome": "Discord",
       "tipo": "Plataforma de Comunicação",
       "descricao": "Plataforma de relacionamento com pessoas e chamados",
-      "url": "https://discord.com/channels/689989595617820716/689991985309679631",
+      "url": "discord://discord.com/channels/689989595617820716/689991985309679631",
       "status": "Ativo",
       "responsavel": "",
       "ambiente": "Produção",

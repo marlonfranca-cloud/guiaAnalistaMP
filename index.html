@@ -899,18 +899,8 @@
     });
   }
 
-  // ── Discord deep link ──
-  function openDiscord(url) {
-    const appUrl = url.replace('https://discord.com', 'discord://-');
-    window.location.href = appUrl;
-    setTimeout(() => window.open(url, '_blank'), 2000);
-  }
-
   function makeLinkBtn(url, label) {
     if (!url) return '';
-    if (url.includes('discord.com')) {
-      return `<button class="btn btn-primary" onclick="openDiscord('${url}')">${label}</button>`;
-    }
     return `<a class="btn btn-primary" href="${url}" target="_blank">${label}</a>`;
   }
 
