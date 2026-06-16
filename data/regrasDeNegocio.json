@@ -44,6 +44,24 @@
       "uso": "",
       "autor": "",
       "link": ""
+    },
+    {
+      "id": 6,
+      "nome": "Pix Automático - Planos ",
+      "descricao": ["Cliente adere ao pix e ganha vantagens:\n \n • Iniciante: \n A: Profissional por 175,90 até 31/12/26 ou \n B: todos os módulos grátis até 31/12/26 \n\n • Profissional: \n A: 50% de desconto por 3 meses ou \n B: todos os módulos grátis até 31/12/26"],
+      "linguagem": "Pix",
+      "uso": "",
+      "autor": "",
+      "link": ""
+    },
+    {
+      "id": 6,
+      "nome": "Pix Automático - Módulos ",
+      "descricao": ["Cliente adere ao pix e ganha vantagens:\n \n • Wabot: \n - Não tem Wabot: grátis até 31/12/26 \n - Já tem Wabot: 9,90 mensal por 1 ano \n \n • Fiscal: \n - Não tem Fiscal: grátis até 31/12/26 \n - Já tem Fiscal: sem alterações \n \n • TEF: \n - Não tem TEF: grátis até 31/12/26 \n - Já tem TEF: sem alterações \n \n *Cliente pode escolher qual módulo vai aderir"],
+      "linguagem": "Pix",
+      "uso": "",
+      "autor": "",
+      "link": ""
     }
   ]
 }

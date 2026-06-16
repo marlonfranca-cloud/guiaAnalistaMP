@@ -735,9 +735,7 @@
           ? `<span class="tag tag-default">${item.status}</span>`
           : '';
 
-    const linkBtn = item.url
-      ? `<a class="btn btn-primary" href="${item.url}" target="_blank">🔗 Acessar</a>`
-      : '';
+    const linkBtn = makeLinkBtn(item.url, '🔗 Acessar');
 
     const respTag = item.responsavel
       ? `<span class="tag tag-default">👤 ${item.responsavel}</span>`
@@ -777,9 +775,7 @@
             ).join('')}</ul>`
           : '');
 
-    const linkBtn = item.link
-      ? `<a class="btn btn-primary" href="${item.link}" target="_blank">📄 Ver doc</a>`
-      : '';
+    const linkBtn = makeLinkBtn(item.link, '📄 Ver doc');
 
     return `
     <div class="card card-processo" data-search="${searchText(item)}" data-id="${item.id}">
@@ -812,9 +808,7 @@
       .map(l => `<span class="tag ${langColors[l] || 'tag-default'}">${l}</span>`)
       .join('');
 
-    const linkBtn = item.link
-      ? `<a class="btn btn-primary" href="${item.link}" target="_blank">🔗 Acessar</a>`
-      : '';
+    const linkBtn = makeLinkBtn(item.link, '🔗 Acessar');
 
     return `
     <div class="card" data-search="${searchText(item)}">
@@ -833,9 +827,7 @@
   }
 
   function cardPlanilha(item) {
-    const linkBtn = item.link
-      ? `<a class="btn btn-primary" href="${item.link}" target="_blank">📂 Abrir</a>`
-      : '';
+    const linkBtn = makeLinkBtn(item.link, '📂 Abrir');
 
     return `
     <div class="card" data-search="${searchText(item)}">
@@ -905,6 +897,21 @@
         label.style.display = anyVisible ? '' : 'none';
       }
     });
+  }
+
+  // ── Discord deep link ──
+  function openDiscord(url) {
+    const appUrl = url.replace('https://discord.com', 'discord://-');
+    window.location.href = appUrl;
+    setTimeout(() => window.open(url, '_blank'), 2000);
+  }
+
+  function makeLinkBtn(url, label) {
+    if (!url) return '';
+    if (url.includes('discord.com')) {
+      return `<button class="btn btn-primary" onclick="openDiscord('${url}')">${label}</button>`;
+    }
+    return `<a class="btn btn-primary" href="${url}" target="_blank">${label}</a>`;
   }
 
   // ── Init ──

@@ -39,7 +39,7 @@
     },
     {
       "id": 5,
-      "nome": "Respostas cadastro módulo fiscal",
+      "nome": "Respostas cadastro fiscal",
       "descricao": "Base de dados de respostas das conabilidades no formulário fiscal",
       "link": "https://docs.google.com/spreadsheets/d/1eebfg6GkJrm-XRXxWWlzpHim9Pc8XFBwWyemVWojrOw/edit?gid=1394001483#gid=1394001483",
       "formato": "",
@@ -48,7 +48,7 @@
     },
     {
       "id": 6,
-      "nome": "Pix e Wallet - Suporte",
+      "nome": "Acompanhamento Pix e Wallet",
       "descricao": "Base de dados de ofertas e carteiras Pix",
       "link": "https://docs.google.com/spreadsheets/d/1c_ANia5o319L314nt24TpRqBIlr7V6ps7omL6sGqK8U/edit?gid=540873512#gid=540873512",
       "formato": "",
@@ -58,7 +58,7 @@
     {
       "id": 7,
       "nome": "Calculadora de fatura",
-      "descricao": "Cálculo automático de fatura para troca de plano - Crie uma cópia",
+      "descricao": "Cálculo automático de fatura para troca de plano",
       "link": "https://docs.google.com/spreadsheets/d/1Q2JTDKrOGjs1Hv_TJSziEsuIDOa0Kr53851V-X_juec/edit?gid=0#gid=0",
       "formato": "",
       "atualizado": "",
