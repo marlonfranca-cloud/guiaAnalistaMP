@@ -185,18 +185,21 @@
       "descricao": "Impressora imprimindo duas vezes o mesmo pedido",
       "categoria": "Impressão",
       "resumo": [
-        "Checar em qual PC a impressora está instalada",
-        "Comparar nome da impressora em todos os PCs",
-        "Gestor aberto em 2 pc",
-        "CONTINUAR DAQUI",
-        ""
+        "Quantos pc na loja?",
+        "Em qual PC a impressora está instalada",
+        "Causa 1: Nome da impressora igual em + de 1 PC",
+        "Causa 2: Gestor aberto em 2 pc",
+        "Causa 3: Gestor aberto na web e app",
+        "Nova causa: Reporte para documentar."
       ],
       "passos": [
+        "Confirme quantos computadores o cliente tem na loja",
         "Confirme em qual computador a impressora está instalada",
-        "Compare o nome da impressora em todos os computadores que imprimem",
-        "Verifique se o Gestor está aberto em mais de um lugar (navegador e app)",
+        "Confira se o nome da impressora é o mesmo em todos nos computadores",
+        "Verifique se o Gestor está aberto em mais de um lugar no mesmo computador (navegador e app)",
         "Se persistir: reinicie o serviço de impressão e teste com uma impressão simples",
-        "Se persistir: registre evidências (print da fila de impressão e do nome da impressora) e acione o suporte"
+        "Se persistir: registre evidências (print da fila de impressão e do nome da impressora) e acione o suporte",
+        "Depois, notifique para documentar essa novidade."
       ]
     },
     {
@@ -205,19 +208,21 @@
       "descricao": "Adicionar IP temporário para acessar impressora em outra faixa de rede",
       "categoria": "Impressão",
       "resumo": [
-        "Painel de Controle > Adaptadores de Rede",
-        "Botão direito no adaptador → Propriedades",
+        "Win + R > ncpa.cpl",
+        "Adaptador conectado → Propriedades",
         "IPv4 → Propriedades → Avançado → Adicionar IP + máscara",
         "Validar com ping ou navegador",
-        "⚠️ Remover o IP adicional após resolver"
+        "Ajustar o IP da impressora",
+        "⚠️ Remover o IP adicional"
       ],
       "passos": [
-        "Abra as Conexões de Rede: Painel de Controle > Rede e Internet > Central de Rede e Compartilhamento > Alterar as configurações do adaptador",
-        "Clique com o botão direito no adaptador em uso > Propriedades",
+        "Abra as Conexões de Rede: abra o terminal Executar (Win + R) e digite: ncpa.cpl",
+        "Clique com o botão direito no adaptador conectado > Propriedades",
         "Selecione Protocolo IP Versão 4 (TCP/IPv4) > Propriedades > Avançado",
         "Em Endereços IP, clique em Adicionar e preencha o IP e a máscara da faixa da impressora",
         "Clique em OK para salvar e valide com ping ou acesso pelo navegador",
-        "Após resolver o problema, remova o IP adicional pelo mesmo caminho (obrigatório)"
+        "Ajuste o IP nas configurações da impressora",
+        "Após resolver, remova o IP adicional pelo mesmo caminho (obrigatório)"
       ]
     },
     {
@@ -226,16 +231,17 @@
       "descricao": "Gestor travado carregando o WhatsApp indefinidamente",
       "categoria": "Wabot",
       "resumo": [
-        "'Recarregar WhatsApp' (canto superior esquerdo)",
-        "Sem melhora → reiniciar o Gestor",
-        "Persistindo → apagar mensagens do WhatsApp",
-        "Grave → apagar mais mensagens + reinstalação limpa"
+        "Recarregar WhatsApp",
+        "Reiniciar o Gestor",
+        "Gerenciador de tarefas → Encerra tudo da Multipedidos",
+        "Reinstalação limpa do Gestor"
       ],
       "passos": [
         "Clique em 'Recarregar WhatsApp' no canto superior esquerdo",
         "Se não reiniciar, reinicie o Gestor manualmente",
+        "Acesse o Gerenciador de tarefas e encerre todos os processos da Multipedidos, remova as versões anteriores do computador do cliente, abra novamente a versão mais recente",
         "Se persistir, apague mensagens do WhatsApp para aliviar a sincronização",
-        "Em casos graves, apague mais mensagens e realize uma reinstalação limpa do Gestor"
+        "Remova todas as versões instaladas e reinstale o Gestor do zero"
       ]
     },
     {
@@ -244,17 +250,18 @@
       "descricao": "Wabot ativo sem enviar respostas",
       "categoria": "Wabot",
       "resumo": [
-        "Conexão do WhatsApp no sistema",
-        "Confirmar se Wabot está ativo (botão de ações)",
-        "Ativo sem resposta → reiniciar Gestor",
-        "Persistindo → reiniciar WhatsApp (limpa dados)",
+        "WhatsApp conectado?",
+        "Wabot ligado?",
+        "Reiniciar Gestor",
+        "Reiniciar WhatsApp",
+        "Instalar versão mais recente do app",
         "Sem solução → acionar suporte técnico"
       ],
       "passos": [
-        "Verifique a conexão na tela do WhatsApp dentro do sistema",
+        "Verifique se o WhatsApp está conectado ao Gestor",
         "No botão de ações (canto superior esquerdo), confirme se o Wabot está ativo",
         "Se ativo mas sem resposta, reinicie o Gestor",
-        "Se persistir, use o botão para reiniciar o WhatsApp (limpa dados e reconecta)",
+        "Se persistir, use o botão para reiniciar o WhatsApp (limpa os dados e reconecta)",
         "Se nada resolver, acione o suporte técnico interno"
       ]
     },
