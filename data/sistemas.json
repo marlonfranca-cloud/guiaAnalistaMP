@@ -132,6 +132,19 @@
       "responsavel": "",
       "ambiente": "Produção",
       "categoria": "Sistemas Internos"
+    },
+    {
+      "id": 106,
+      "nome": "API de integrações",
+      "tipo": "Documentação técnica", 
+      "descricao": "Documentação da API oficial da Multipedidos",
+      "url": "https://integrar.multipedidos.com.br",
+      "status": "Ativo",
+      "responsavel": "",
+      "ambiente": "Produção",
+      "categoria": "Sistemas Internos"
     }
+
+    
   ]
 }
