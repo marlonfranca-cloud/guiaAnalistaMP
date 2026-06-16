@@ -54,6 +54,15 @@
       "formato": "",
       "atualizado": "",
       "responsavel": ""
+    },
+    {
+      "id": 7,
+      "nome": "Calculadora de fatura",
+      "descricao": "Cálculo automático de fatura para troca de plano - Crie uma cópia",
+      "link": "https://docs.google.com/spreadsheets/d/1c_ANia5o319L314nt24TpRqBIlr7V6ps7omL6sGqK8U/edit?gid=540873512#gid=540873512",
+      "formato": "",
+      "atualizado": "",
+      "responsavel": ""
     }
   ]
 }
