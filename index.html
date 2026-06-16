@@ -30,13 +30,13 @@
       height: 100%;
       background: var(--bg);
       color: var(--text);
-      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-family: 'Latto', system-ui, sans-serif;
       font-size: 15px;
-      line-height: 1.6;
+      line-height: 1.0;
     }
 
-    a { color: var(--orange-glow); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a { color: var(--orange-glow); text-decoration-line: underline; }
+    a:hover { text-decoration-thickness: 3px; }
 
     /* ── Layout ── */
     .app {
@@ -111,6 +111,21 @@
     }
 
     .search-wrap input::placeholder { color: var(--text-dim); }
+
+    .logout-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.15s, color 0.15s;
+      flex-shrink: 0;
+    }
+    .logout-btn:hover { background: var(--surface2); color: var(--orange-glow); }
 
     .search-icon {
       position: absolute;
@@ -188,7 +203,7 @@
     .section-header p {
       color: var(--text-muted);
       font-size: 13px;
-      margin-top: 3px;
+      margin-top: 15px;
     }
 
     .count-badge {
@@ -200,14 +215,14 @@
       padding: 2px 8px;
       border-radius: 20px;
       margin-left: 8px;
-      vertical-align: middle;
+      vertical-align: bottom;
     }
 
     /* ── Cards Grid ── */
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 16px;
+      gap: 15px;
     }
 
     /* ── Card ── */
@@ -228,7 +243,7 @@
       display: flex;
       align-items: flex-start;
       gap: 12px;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
     }
 
     .card-icon {
@@ -400,7 +415,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      margin-top: 10px;
+      margin-top: 0px;
     }
 
     .resumo-tag {
@@ -538,6 +553,7 @@
         <span class="search-icon">🔍</span>
         <input type="text" id="searchInput" placeholder="Buscar..." oninput="filterCards()" />
       </div>
+      <a href="/api/logout" class="logout-btn" title="Sair">⏻</a>
     </div>
   </header>
 
