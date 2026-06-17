@@ -3,6 +3,40 @@
   "items": [
     { 
       "id": 1,
+      "nome": "Planos anuais",
+      "descricao": "• Iniciante: R$ 1.750,80\n • Iniciante + Wabot: R$ 2.409,60\n • Iniciante + NFCe: R$ 2.625,60\n• Iniciante + Wabot + NFCe: R$ 3.284,40\n • Iniciante + NFCe + TEF: R$ 3.704,40\n• Iniciante + Wabot + NFCe + TEF: R$ 4.363,20\n Todos os Iniciantes em 3x, 4x ou 12x \n ____________________________________________________ \n • Profissional: R$ 2.638,80 \n • Profissional + Wabot: R$ 3.297,60 \n • Profissional + NFCe: R$ 3.513,60 \n • Profissional + NFCe + TEF: R$ 4.592,40 \n • Profissional + Wabot + NFCe: R$ 4.172,40 \n • Profissional + Wabot + NFCe + TEF: R$ 5.251,20 \n Todos os Profissionais em 4x, 5x ou 12x",
+      "linguagem": "",
+      "uso": "",
+      "autor": "",
+      "link": ""
+    },{ 
+      "id": 1,
+      "nome": "Planos mensais",
+      "descricao": "• Iniciante: R$ 175,90\n • Iniciante + Wabot: R$ 235,80\n • Iniciante + NFCe: R$ 265,80\n • Iniciante + Wabot + NFCe: R$ 325,70\n • Iniciante + NFCe + TEF: R$ 365,70\n• Iniciante + Wabot + NFCe + TEF: R$ 425,60 \n ____________________________________________________ \n • Profissional: R$ 269,90\n • Profissional + Wabot: R$ 329,80\n • Profissional + NFCe: R$ 359,80\n • Profissional + Wabot + NFCe: R$ 419,70\n • Profissional + NFCe + TEF: R$ 459,70\n• Profissional + Wabot + NFCe + TEF: R$ 519,60",
+      "linguagem": "",
+      "uso": "",
+      "autor": "",
+      "link": ""
+    },
+    {
+      "id": 6,
+      "nome": "Pix Automático - Planos ",
+      "descricao": ["Cliente adere ao pix e ganha vantagens:\n \n • Iniciante: \n A: Profissional por 175,90 até 31/12/26 ou \n B: todos os módulos grátis até 31/12/26 \n\n • Profissional: \n A: 50% de desconto por 3 meses ou \n B: todos os módulos grátis até 31/12/26"],
+      "linguagem": "Pix",
+      "uso": "",
+      "autor": "",
+      "link": ""
+    },
+    {
+      "id": 6,
+      "nome": "Pix Automático - Módulos ",
+      "descricao": ["Cliente adere ao pix e ganha vantagens:\n \n • Wabot: \n - Não tem Wabot: grátis até 31/12/26 \n - Já tem Wabot: 9,90 mensal por 1 ano \n \n • Fiscal: \n - Não tem Fiscal: grátis até 31/12/26 \n - Já tem Fiscal: sem alterações \n \n • TEF: \n - Não tem TEF: grátis até 31/12/26 \n - Já tem TEF: sem alterações \n \n *Cliente pode escolher qual módulo vai aderir"],
+      "linguagem": "Pix",
+      "uso": "",
+      "autor": "",
+      "link": ""
+    },{ 
+      "id": 1,
       "nome": "Desbloqueio temporário",
       "descricao": "• 1º desbloqueio: cliente faz \n • 2º desbloqueio: 30min \n • 3º desbloqueio: abertura da loja \n • 4º desbloqueio ou mais: financeiro",
       "linguagem": "",
@@ -41,24 +75,6 @@
       "nome": "TEF obrigatório",
       "descricao": ["Legislação obrigatória:\n • Ceará (CE)\n • Mato Grosso (MT)\n • Rio Grande do Sul (RS)"],
       "linguagem": "TEF",
-      "uso": "",
-      "autor": "",
-      "link": ""
-    },
-    {
-      "id": 6,
-      "nome": "Pix Automático - Planos ",
-      "descricao": ["Cliente adere ao pix e ganha vantagens:\n \n • Iniciante: \n A: Profissional por 175,90 até 31/12/26 ou \n B: todos os módulos grátis até 31/12/26 \n\n • Profissional: \n A: 50% de desconto por 3 meses ou \n B: todos os módulos grátis até 31/12/26"],
-      "linguagem": "Pix",
-      "uso": "",
-      "autor": "",
-      "link": ""
-    },
-    {
-      "id": 6,
-      "nome": "Pix Automático - Módulos ",
-      "descricao": ["Cliente adere ao pix e ganha vantagens:\n \n • Wabot: \n - Não tem Wabot: grátis até 31/12/26 \n - Já tem Wabot: 9,90 mensal por 1 ano \n \n • Fiscal: \n - Não tem Fiscal: grátis até 31/12/26 \n - Já tem Fiscal: sem alterações \n \n • TEF: \n - Não tem TEF: grátis até 31/12/26 \n - Já tem TEF: sem alterações \n \n *Cliente pode escolher qual módulo vai aderir"],
-      "linguagem": "Pix",
       "uso": "",
       "autor": "",
       "link": ""
