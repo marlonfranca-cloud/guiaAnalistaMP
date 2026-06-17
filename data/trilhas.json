@@ -1,0 +1,88 @@
+{
+  "descricao": "Trilhas visuais dos principais fluxos de atendimento.",
+  "items": [
+    {
+      "id": "ativacao-fiscal",
+      "nome": "Ativação Fiscal (NFC-e)",
+      "descricao": "Trilha de configuração e ativação da emissão de NFC-e um cliente",
+      "categoria": "Fiscal",
+      "etapas": [
+        { "tipo": "inicio", "texto": "Cliente solicita a ativação do módulo fiscal" },
+        { "tipo": "acao", "texto": "Colete os dados do cliente e preencha o formulário fiscal" },
+        { "tipo": "acao", "texto": "Crie planilha de NCMs dos produtos da loja" },
+        { "tipo": "acao", "texto": "Faça contato com a contabilidade" },
+        {
+          "tipo": "decisao",
+          "texto": "Contabilidade respondeu?",
+          "ramos": [
+            {
+              "label": "Não",
+              "cor": "vermelho",
+              "etapas": [
+                { "tipo": "alerta", "texto": "Tente o contato mais 2x" },
+                { "tipo": "fim", "texto": "Informe ao cliente que a contabilidade não atende, cliente deve pedir que a contabilidade nos contate" }
+              ]
+            },
+            {
+              "label": "Sim",
+              "cor": "verde",
+              "etapas": [
+                { "tipo": "acao", "texto": "Se apresente e envie sequencialmente as mensagens rápidas: 860, 856 e 857" },
+                { "tipo": "acao", "texto": "Envie a planilha de NCMs e peça que o contador a revise e reenvie revisada" }
+              ]
+            }
+          ]
+        },{
+          "tipo": "decisao",
+          "texto": "Cliente de SC, PR ou CE?",
+          "ramos": [
+            {
+              "label": "Sim",
+              "cor": "vermelho",
+              "etapas": [
+                { "tipo": "alerta", "texto": "PR: Contador precisa enviar o 'CADASTRO DE AUTORIZAÇÃO DE USO DE SISTEMA' em PDF (mensagem rápida 859)" },
+                { "tipo": "alerta", "texto": "SC, PR e CE: cliente precisa do credenciamento no Enotas" }
+              ]
+            },
+            {
+              "label": "Não",
+              "cor": "verde",
+              "etapas": [
+                { "tipo": "", "texto": "Avançe para a edição do contrato do cliente no CRM" }
+              ]
+            }
+          ]
+        },
+        { "tipo": "acao", "texto": "Altere o cadastro do cliente, adicionando o módulo fiscal no CRM" },
+        { "tipo": "acao", "texto": "Acesse a planilha de respostas do cadastro do módulo fiscal e preencha o módulo fiscal do sistema" },
+        { "tipo": "acao", "texto": "Cadastre as NCMs da planilha revisada enviada pelo contador" },
+        { "tipo": "acao", "texto": "Cadastre as NCMs em cada produto da loja do cliente" },
+        { "tipo": "acao", "texto": "Contate o contador e verifique se o cliente já tem o Certificado Digital" },
+        { "tipo": "acao", "texto": "Contate o cliente para adicionar o Certificado Digital (tipo .pfx) ao Gestor" },
+        { "tipo": "acao", "texto": "Crie um pedido teste (preferencialmente de uma bebida) e emita a nota desse pedido" },
+        {
+          "tipo": "decisao",
+          "texto": "NFCe do pedido teste foi impressa?",
+          "ramos": [
+            {
+              "label": "Não",
+              "cor": "vermelho",
+              "etapas": [
+                { "tipo": "acao", "texto": "Instale o QZ Tray no computador do cliente e imprima novamente" }
+              ]
+            },
+            {
+              "label": "Sim",
+              "cor": "verde",
+              "etapas": [
+                { "tipo": "acao", "texto": "Avance para o próximo passo" }
+              ]
+            }
+          ]
+        },
+        { "tipo": "acao", "texto": "Envie a mensagem rápida 876 ao cliente, e se não houver nenhuma dúvida, finalize." },
+        { "tipo": "fim", "texto": "NFC-e ativa em produção ✓" }
+      ]
+    }
+  ]
+}

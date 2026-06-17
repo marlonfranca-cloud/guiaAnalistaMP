@@ -535,6 +535,252 @@
       .search-wrap input { width: 150px; }
       .cards-grid { grid-template-columns: 1fr; }
     }
+
+    /* ══════════════════════════════════════════
+       TRILHAS — Fluxograma
+    ══════════════════════════════════════════ */
+
+    /* Modal overlay */
+    .flow-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.82);
+      z-index: 500;
+      overflow-y: auto;
+      padding: 32px 16px 48px;
+    }
+    .flow-modal.open { display: flex; align-items: flex-start; justify-content: center; }
+
+    .flow-modal-inner {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      width: 100%;
+      max-width: 960px;
+      overflow: hidden;
+    }
+
+    .flow-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--surface);
+      z-index: 10;
+    }
+    .flow-modal-header h3 {
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .flow-modal-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .flow-modal-close {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 18px;
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.15s, color 0.15s;
+    }
+    .flow-modal-close:hover { background: var(--surface2); color: var(--text); }
+
+    .flow-modal-body {
+      padding: 32px 24px 40px;
+      overflow-x: auto;
+    }
+
+    /* ── Flowchart root ── */
+    .flow-chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      min-width: 280px;
+    }
+
+    /* ── Base node ── */
+    .flow-node {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.45;
+      font-weight: 500;
+      border: 2px solid;
+      position: relative;
+    }
+
+    /* Início / Fim */
+    .flow-node.flow-inicio, .flow-node.flow-fim {
+      border-radius: 50px;
+      padding: 10px 28px;
+      min-width: 170px;
+      max-width: 280px;
+    }
+    .flow-node.flow-inicio {
+      background: rgba(74,222,128,0.1);
+      border-color: #4ade80;
+      color: #4ade80;
+    }
+    .flow-node.flow-fim {
+      background: rgba(248,113,113,0.1);
+      border-color: #f87171;
+      color: #f87171;
+    }
+
+    /* Ação */
+    .flow-node.flow-acao {
+      border-radius: 8px;
+      padding: 12px 20px;
+      min-width: 220px;
+      max-width: 340px;
+      background: var(--surface2);
+      border-color: var(--border);
+      color: var(--text);
+    }
+
+    /* Alerta */
+    .flow-node.flow-alerta {
+      border-radius: 8px;
+      padding: 12px 20px;
+      min-width: 220px;
+      max-width: 340px;
+      background: var(--orange-soft);
+      border-color: var(--orange);
+      color: var(--orange-glow);
+    }
+
+    /* ── Seta conectora ── */
+    .flow-connector {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .flow-connector-line {
+      width: 2px;
+      height: 22px;
+      background: var(--text-dim);
+    }
+    .flow-connector-head {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 7px solid var(--text-dim);
+    }
+
+    /* ── Nó de Decisão (losango) ── */
+    .flow-decisao-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .flow-decisao-outer {
+      width: 120px;
+      height: 120px;
+      transform: rotate(45deg);
+      border: 2px solid var(--orange);
+      background: var(--orange-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 16px 0; /* espaço para os cantos do losango */
+      flex-shrink: 0;
+    }
+    .flow-decisao-label {
+      transform: rotate(-45deg);
+      font-size: 11.5px;
+      line-height: 1.35;
+      text-align: center;
+      width: 86px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ── Ramificações ── */
+    .flow-branches-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* linha horizontal saindo do losango */
+    .flow-branches-bar {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .flow-branches {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .flow-branch {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 200px;
+      max-width: 320px;
+      position: relative;
+    }
+
+    /* linha vertical de cada ramo */
+    .flow-branch::before {
+      content: '';
+      width: 2px;
+      height: 28px;
+      background: var(--branch-color, var(--text-dim));
+      display: block;
+    }
+
+    .flow-branch-label {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-bottom: 8px;
+      border: 1px solid;
+    }
+    .flow-branch-label.verde   { color: #4ade80; border-color: #4ade80; background: rgba(74,222,128,0.1); }
+    .flow-branch-label.vermelho{ color: #f87171; border-color: #f87171; background: rgba(248,113,113,0.1); }
+    .flow-branch-label.amarelo { color: #fbbf24; border-color: #fbbf24; background: rgba(251,191,36,0.1); }
+    .flow-branch-label.default { color: var(--text-muted); border-color: var(--border); }
+
+    /* linha de merge após ramos */
+    .flow-merge-line {
+      width: 2px;
+      height: 24px;
+      background: var(--text-dim);
+      margin-top: 4px;
+    }
+
+    /* ── Card de Trilha (na grade) ── */
+    .card-trilha-cat { font-size: 12px; }
   </style>
 </head>
 <body>
@@ -569,6 +815,9 @@
       <button class="tab-btn" onclick="loadTab('regrasDeNegocio')" data-tab="regrasDeNegocio">
         <span class="tab-icon">📜</span> Regras de Negócio
       </button>
+      <button class="tab-btn" onclick="loadTab('trilhas')" data-tab="trilhas">
+        <span class="tab-icon">🗺️</span> Trilhas
+      </button>
       <button class="tab-btn" onclick="loadTab('planilhas')" data-tab="planilhas">
         <span class="tab-icon">📊</span> Planilhas
       </button>
@@ -584,6 +833,22 @@
   </main>
 
   <footer>Guia do Suporte — uso interno</footer>
+
+  <!-- Modal do Fluxograma (Trilhas) -->
+  <div id="flowModal" class="flow-modal" onclick="closeFlowchart(event)">
+    <div class="flow-modal-inner" onclick="event.stopPropagation()">
+      <div class="flow-modal-header">
+        <div>
+          <h3 id="flowModalTitle">🗺️ Trilha</h3>
+          <div class="flow-modal-desc" id="flowModalDesc"></div>
+        </div>
+        <button class="flow-modal-close" onclick="closeFlowchart()">✕</button>
+      </div>
+      <div class="flow-modal-body">
+        <div id="flowModalBody"></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -592,6 +857,7 @@
   let allItems = [];
   let currentData = {};
   let viewMode = 'completo'; // 'completo' | 'resumido'
+  let trilhasData = []; // cache para modal de fluxograma
 
   // ── Tab loading ──
   function setViewMode(mode) {
@@ -616,8 +882,8 @@
 
     // Clear search
     document.getElementById('searchInput').value = '';
-
     setLoading();
+
     fetch(`data/${tab}.json`)
       .then(r => {
         if (!r.ok) throw new Error('Arquivo não encontrado');
@@ -626,6 +892,7 @@
       .then(data => {
         allItems = data.items || [];
         currentData = data;
+        if (tab === 'trilhas') trilhasData = data.items || [];
         renderTab(tab, data);
       })
       .catch(err => {
@@ -653,7 +920,8 @@
       processos: 'Processos e fluxos de trabalho padronizados.',
       regrasdeNegocio:'Regras de negócio aplicáveis aos clientes.',
       planilhas: 'Planilhas e templates para consulta e uso.',
-      contatos:  'Pessoas e canais de contato importantes.'
+      contatos:  'Pessoas e canais de contato importantes.',
+      trilhas:   'Fluxogramas visuais dos principais processos de atendimento.'
     };
 
     const icons = {
@@ -661,7 +929,8 @@
       processos: '⚙️',
       regrasDeNegocio:   '📜',
       planilhas: '📊',
-      contatos:  '📞'
+      contatos:  '📞',
+      trilhas:   '🗺️'
     };
 
     const labels = {
@@ -669,7 +938,8 @@
       processos: 'Processos',
       regrasDeNegocio:   'Regras de negócio',
       planilhas: 'Planilhas',
-      contatos:  'Contatos úteis'
+      contatos:  'Contatos úteis',
+      trilhas:   'Trilhas'
     };
 
     // Group items by category if available
@@ -722,6 +992,7 @@
       case 'regrasDeNegocio':   return cardScript(item);
       case 'planilhas': return cardPlanilha(item);
       case 'contatos':  return cardContato(item);
+      case 'trilhas':   return cardTrilha(item);
       default: return '';
     }
   }
@@ -869,6 +1140,108 @@
     </div>`;
   }
 
+  // ── Trilhas: card na grade ──
+  function cardTrilha(item) {
+    const catColors = { Fiscal:'tag-orange', Atendimento:'tag-blue', 'Contratação':'tag-green' };
+    const catTag = item.categoria
+      ? `<span class="tag ${catColors[item.categoria] || 'tag-default'}">${item.categoria}</span>` : '';
+    const stepCount = countEtapas(item.etapas || []);
+    return `
+    <div class="card" data-search="${searchText(item)}">
+      <div class="card-top">
+        <div class="card-icon">🗺️</div>
+        <div class="card-title-wrap">
+          <div class="card-title">${item.nome}</div>
+          ${item.categoria ? `<div class="card-subtitle">${item.categoria}</div>` : ''}
+        </div>
+      </div>
+      ${item.descricao ? `<p class="card-desc">${item.descricao}</p>` : ''}
+      <div class="card-meta">
+        ${catTag}
+        <span class="tag tag-default">${stepCount} etapas</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="openFlowchart('${item.id}')">🔀 Ver trilha</button>
+      </div>
+    </div>`;
+  }
+
+  function countEtapas(etapas) {
+    let n = 0;
+    etapas.forEach(e => {
+      n++;
+      if (e.ramos) e.ramos.forEach(r => { n += countEtapas(r.etapas || []); });
+    });
+    return n;
+  }
+
+  // ── Trilhas: modal ──
+  function openFlowchart(id) {
+    const trilha = trilhasData.find(t => t.id === id);
+    if (!trilha) return;
+    document.getElementById('flowModalTitle').textContent = '🗺️ ' + trilha.nome;
+    document.getElementById('flowModalDesc').textContent = trilha.descricao || '';
+    document.getElementById('flowModalBody').innerHTML = renderFlowchart(trilha.etapas || []);
+    document.getElementById('flowModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeFlowchart(e) {
+    if (e && e.target !== document.getElementById('flowModal')) return;
+    document.getElementById('flowModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // ── Trilhas: renderização do fluxograma ──
+  function renderFlowchart(etapas) {
+    return `<div class="flow-chart">${renderEtapas(etapas)}</div>`;
+  }
+
+  function connector() {
+    return `<div class="flow-connector"><div class="flow-connector-line"></div><div class="flow-connector-head"></div></div>`;
+  }
+
+  function renderEtapas(etapas) {
+    let html = '';
+    etapas.forEach((e, i) => {
+      const isLast = i === etapas.length - 1;
+      if (e.tipo === 'decisao') {
+        html += renderDecisao(e);
+        if (!isLast) html += connector();
+      } else {
+        const cls = { inicio:'flow-inicio', fim:'flow-fim', acao:'flow-acao', alerta:'flow-alerta' }[e.tipo] || 'flow-acao';
+        const icon = { inicio:'▶', fim:'⏹', alerta:'⚠️' }[e.tipo] || '';
+        html += `<div class="flow-node ${cls}">${icon ? `<span>${icon}</span>` : ''}${e.texto}</div>`;
+        if (!isLast) html += connector();
+      }
+    });
+    return html;
+  }
+
+  function renderDecisao(e) {
+    const ramos = e.ramos || [];
+    const ramosHtml = ramos.map(r => {
+      const cor = r.cor || 'default';
+      const branchColor = { verde:'#4ade80', vermelho:'#f87171', amarelo:'#fbbf24', default:'var(--text-dim)' }[cor] || 'var(--text-dim)';
+      return `
+        <div class="flow-branch" style="--branch-color:${branchColor}">
+          <div class="flow-branch-label ${cor}">${r.label}</div>
+          ${renderEtapas(r.etapas || [])}
+        </div>`;
+    }).join('');
+
+    return `
+      <div class="flow-decisao-wrap">
+        <div class="flow-decisao-outer">
+          <div class="flow-decisao-label">${e.texto}</div>
+        </div>
+        <div class="flow-branches-container">
+          <div class="flow-branches">${ramosHtml}</div>
+          <div class="flow-merge-line"></div>
+        </div>
+      </div>`;
+  }
+
   // ── Search ──
   function searchText(item) {
     return Object.values(item).join(' ').toLowerCase();
@@ -884,11 +1257,9 @@
       if (match) visible++;
     });
 
-    // Update count badge
     const badge = document.getElementById('countBadge');
     if (badge) badge.textContent = visible;
 
-    // Show/hide empty groups
     document.querySelectorAll('[data-group]').forEach(grid => {
       const anyVisible = [...grid.querySelectorAll('.card')].some(c => c.style.display !== 'none');
       grid.style.display = anyVisible ? '' : 'none';
