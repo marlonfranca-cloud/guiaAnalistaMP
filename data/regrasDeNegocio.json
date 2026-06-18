@@ -21,7 +21,7 @@
     {
       "id": 6,
       "nome": "Pix Automático - Planos ",
-      "descricao": ["Cliente adere ao pix e ganha vantagens:\n \n • Iniciante: \n A: Profissional por 175,90 até 31/12/26 ou \n B: todos os módulos grátis até 31/12/26 \n\n • Profissional: \n A: 50% de desconto por 3 meses ou \n B: todos os módulos grátis até 31/12/26"],
+      "descricao": ["Cliente adere ao pix e ganha vantagens:\n \n • Iniciante: \n A: Profissional por 175,90 até 31/12/26 ou \n B: todos os módulos grátis até 31/12/26 ou \n C: Wabot por 9,90 por 1 ano \n\n • Profissional: \n A: 50% de desconto (3 meses)  + Wabot por 9,90 por 1 ano ou \n B: todos os módulos grátis até 31/12/26"],
       "linguagem": "Pix",
       "uso": "",
       "autor": "",
@@ -43,9 +43,19 @@
       "uso": "",
       "autor": "",
       "link": ""
-    },{ 
+    },
+    {
+      "id": 5,
+      "nome": "TEF obrigatório",
+      "descricao": ["Legislação obrigatória:\n • Ceará (CE)\n • Mato Grosso (MT)\n • Rio Grande do Sul (RS)"],
+      "linguagem": "TEF",
+      "uso": "",
+      "autor": "",
+      "link": ""
+    },
+    {
       "id": 2,
-      "nome": "PDV Simplificado",
+      "nome": "Planos ",
       "descricao": "REQ: Plano iniciante + Wabot",
       "linguagem": "PDV",
       "uso": "Iniciante",
@@ -69,15 +79,6 @@
       "uso": "",
       "autor": "",
       "link": "discord://discord.com/channels/689989595617820716/889991057104850974"
-    },
-    {
-      "id": 5,
-      "nome": "TEF obrigatório",
-      "descricao": ["Legislação obrigatória:\n • Ceará (CE)\n • Mato Grosso (MT)\n • Rio Grande do Sul (RS)"],
-      "linguagem": "TEF",
-      "uso": "",
-      "autor": "",
-      "link": ""
     }
   ]
 }
