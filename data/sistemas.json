@@ -57,15 +57,15 @@
       "categoria": "Principais sistemas"
     },
     {
-      "id": 100,
+      "id": 8,
       "nome": "CRM Interno",
       "tipo": "Gestão de Pessoas", 
       "descricao": "Sistema principal de gestão de contratos",
-      "url": "https://crmmultipedidos.lovable.app/pendencias",
+      "url": "https://crm-multipedidos.web.app",
       "status": "Ativo",
       "responsavel": "",
       "ambiente": "Produção",
-      "categoria": "Sistemas Internos"
+      "categoria": "Principais sistemas"
     },
     {
       "id": 101,
