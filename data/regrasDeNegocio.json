@@ -4,7 +4,7 @@
     { 
       "id": 1,
       "nome": "Planos anuais",
-      "descricao": "• Iniciante: R$ 1.750,80\n • Iniciante + Wabot: R$ 2.409,60 (pode ter o PDV simplificado)\n • Iniciante + NFCe: R$ 2.625,60\n• Iniciante + Wabot + NFCe: R$ 3.284,40\n • Iniciante + NFCe + TEF: R$ 3.704,40\n• Iniciante + Wabot + NFCe + TEF: R$ 4.363,20\n Todos os Iniciantes em 3x, 4x ou 12x \n ____________________________________________________ \n • Profissional: R$ 2.638,80 \n • Profissional + Wabot: R$ 3.297,60 \n • Profissional + NFCe: R$ 3.513,60 \n • Profissional + NFCe + TEF: R$ 4.592,40 \n • Profissional + Wabot + NFCe: R$ 4.172,40 \n • Profissional + Wabot + NFCe + TEF: R$ 5.251,20 \n Todos os Profissionais em 4x, 5x ou 12x",
+      "descricao": "• Iniciante: R$ 1.750,80\n • Iniciante + Wabot: R$ 2.409,60\n • Iniciante + NFCe: R$ 2.625,60\n• Iniciante + Wabot + NFCe: R$ 3.284,40\n • Iniciante + NFCe + TEF: R$ 3.704,40\n• Iniciante + Wabot + NFCe + TEF: R$ 4.363,20\n Todos os Iniciantes em 3x, 4x ou 12x \n Iniciante + Wabot libera o PDV simplificado\n ____________________________________________________ \n • Profissional: R$ 2.638,80 \n • Profissional + Wabot: R$ 3.297,60 \n • Profissional + NFCe: R$ 3.513,60 \n • Profissional + NFCe + TEF: R$ 4.592,40 \n • Profissional + Wabot + NFCe: R$ 4.172,40 \n • Profissional + Wabot + NFCe + TEF: R$ 5.251,20 \n Todos os Profissionais em 4x, 5x ou 12x",
       "linguagem": "",
       "uso": "",
       "autor": "",
@@ -12,7 +12,7 @@
     },{ 
       "id": 1,
       "nome": "Planos mensais",
-      "descricao": "• Iniciante: R$ 175,90\n • Iniciante + Wabot: R$ 235,80 (pode ter o PDV simplificado)\n • Iniciante + NFCe: R$ 265,80\n • Iniciante + Wabot + NFCe: R$ 325,70\n • Iniciante + NFCe + TEF: R$ 365,70\n• Iniciante + Wabot + NFCe + TEF: R$ 425,60 \n ____________________________________________________ \n • Profissional: R$ 269,90\n • Profissional + Wabot: R$ 329,80\n • Profissional + NFCe: R$ 359,80\n • Profissional + Wabot + NFCe: R$ 419,70\n • Profissional + NFCe + TEF: R$ 459,70\n• Profissional + Wabot + NFCe + TEF: R$ 519,60",
+      "descricao": "• Iniciante: R$ 175,90\n • Iniciante + Wabot: R$ 235,80\n • Iniciante + NFCe: R$ 265,80\n • Iniciante + Wabot + NFCe: R$ 325,70\n • Iniciante + NFCe + TEF: R$ 365,70\n• Iniciante + Wabot + NFCe + TEF: R$ 425,60 \n Iniciante + Wabot libera o PDV simplificado\n ____________________________________________________ \n • Profissional: R$ 269,90\n • Profissional + Wabot: R$ 329,80\n • Profissional + NFCe: R$ 359,80\n • Profissional + Wabot + NFCe: R$ 419,70\n • Profissional + NFCe + TEF: R$ 459,70\n• Profissional + Wabot + NFCe + TEF: R$ 519,60",
       "linguagem": "",
       "uso": "",
       "autor": "",
