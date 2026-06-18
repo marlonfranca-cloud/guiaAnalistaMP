@@ -54,24 +54,6 @@
       "link": ""
     },
     {
-      "id": 2,
-      "nome": "Planos ",
-      "descricao": "REQ: Plano iniciante + Wabot",
-      "linguagem": "PDV",
-      "uso": "Iniciante",
-      "autor": "",
-      "link": ""
-    }, 
-    {
-      "id": 3,
-      "nome": "Wabot por R$9,90",
-      "descricao": "REQ: Qualquer plano + Pix Automático",
-      "linguagem": ["Wabot", "Pix"],
-      "uso": "Qualquer plano",
-      "autor": "",
-      "link": ""
-    },
-    {
       "id": 4,
       "nome": "Fila de alteração",
       "descricao": "Não fazer alterações durante atendimento, encaminhar para o canal #fila-de-alterações",
