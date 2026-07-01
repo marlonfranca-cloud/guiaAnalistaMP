@@ -35,7 +35,17 @@
       "uso": "",
       "autor": "",
       "link": ""
-    },{ 
+    },
+    {
+      "id": 6,
+      "nome": "Planos Avulsos",
+      "descricao": [" \n • NFce: R$89,90 \n • Wabot: R$59,90 \n • TEF: R$99,90"],
+      "linguagem": "",
+      "uso": "",
+      "autor": "",
+      "link": ""
+    },
+    { 
       "id": 1,
       "nome": "Desbloqueio temporário",
       "descricao": "• 1º desbloqueio: cliente faz \n • 2º desbloqueio: 30min \n • 3º desbloqueio: abertura da loja \n • 4º desbloqueio ou mais: financeiro",
