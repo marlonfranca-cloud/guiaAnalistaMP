@@ -143,8 +143,17 @@
       "responsavel": "",
       "ambiente": "Produção",
       "categoria": "Sistemas Internos"
+    },
+    {
+      "id": 107,
+      "nome": "Links Wabot - Pelo navegador",
+      "tipo": "Facilidade de acesso", 
+      "descricao": "Links para você visualizar o Wabot do cliente pelo seu navegador",
+      "url": "discord://discord.com/channels/1022202533613162597/1024468556135551077/1405663037633073223",
+      "status": "Ativo",
+      "responsavel": "",
+      "ambiente": "Produção",
+      "categoria": "Sistemas Internos"
     }
-
-    
   ]
 }
